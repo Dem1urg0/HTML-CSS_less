@@ -1,3 +1,35 @@
-h3{
+
+p{
+    font-size: 1em;
+}
+.namestore{
+    color: blue;
+}
+img[alt="phone"]{
+    border: 3px solid royalblue;
+}
+.heading{
     color: brown;
+    background-color: blanchedalmond ;
+    border: 2px solid black;
+    text-align: center;
+}
+.first{
+    color: darkblue;
+    background: no-repeat url("../img/Phone.png") center;
+}
+.list{
+    list-style-type: none;
+}
+.list > li{
+    width: 100px;
+    height: 30px;
+    border: 1px solid blue;
+}
+.list + p{
+    color: cadetblue;
+}
+.link{
+    text-decoration: none;
+    text-transform: uppercase;
 }
