@@ -1,6 +1,8 @@
-
-p{
-    font-size: 1em;
+h3{
+    color: black;
+    size: 18px;
+    font-weight: 400;
+    background-color: #eaeaea;
 }
 .namestore{
     color: blue;
@@ -8,28 +10,58 @@ p{
 img[alt="phone"]{
     border: 3px solid royalblue;
 }
-.heading{
-    color: brown;
-    background-color: blanchedalmond ;
-    border: 2px solid black;
-    text-align: center;
-}
 .first{
-    color: darkblue;
-    background: no-repeat url("../img/Phone.png") center;
+    color: #707070;
+    size: 14px;
+    font-style: italic;
+    line-height: 16px;
 }
-.list{
+.seconde{
+    color: #484343;
+    size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+.list li{
     list-style-type: none;
+    list-style-image: url("../img/list-style-image.png");
+    color: cadetblue;
 }
 .list > li{
     width: 100px;
     height: 30px;
-    border: 1px solid blue;
-}
-.list + p{
-    color: cadetblue;
 }
 .link{
     text-decoration: none;
     text-transform: uppercase;
+}
+h2,h3,.namestore,.heading{
+    text-align: center;
+}
+body{
+    background-color: #f8f8f8;
+}
+.menu li{
+    font-style: italic;
+    font-size: 20px;
+    list-style-type: none;
+}
+a{
+    color: cornflowerblue;
+    list-style-type: armenian;
+    size: 20px;
+}
+.menu li a{
+    color: #8B00FF;
+    size: 25px;
+}
+.message input text{
+    height: 15px;
+    width: 250px;
+    font-style: italic;
+}
+.message input{
+    color: #3e59cc;
+    font-style: inherit;
 }
