@@ -1,67 +1,121 @@
-h3{
+h3 {
     color: black;
     size: 18px;
     font-weight: 400;
     background-color: #eaeaea;
 }
-.namestore{
+
+.namestore {
     color: blue;
 }
-img[alt="phone"]{
-    border: 3px solid royalblue;
+/*Рамка вокрук фото товара*/
+img[alt="phone"],img[alt="phone1"] {
+    outline: none;
 }
-.first{
+
+img[alt="phone"]:hover,img[alt="phone1"]:hover {
+    outline: 3px solid #3e59cc;
+}
+
+.first {
     color: #707070;
     size: 14px;
     font-style: italic;
     line-height: 16px;
 }
-.seconde{
+
+.seconde {
     color: #484343;
     size: 16px;
     font-weight: 400;
     line-height: 24px;
     text-align: left;
 }
-.list li{
+
+.list li {
     list-style-type: none;
     list-style-image: url("../img/list-style-image.png");
     color: cadetblue;
 }
-.list > li{
+
+.list > li {
     width: 100px;
     height: 30px;
 }
-.link{
+
+ a {
     text-decoration: none;
-    text-transform: uppercase;
 }
-h2,h3,.namestore,.heading{
+
+h2, h3, .heading {
     text-align: center;
 }
-body{
+
+body {
     background-color: #f8f8f8;
 }
-.menu li{
-    font-style: italic;
-    font-size: 20px;
-    list-style-type: none;
+/*Меню*/
+.menu li:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
-a{
+
+.menu li:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.menu li {
+    width: 100px;
+    height: 40px;
+    list-style-type: none;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+.menu li a {
+    color: #8B00FF;
+    size: 25px;
+}
+
+.menu li a:hover {
+    color: #1896FF;
+}
+.menu li a:active{
+    color: red;
+}
+.menu .new:after{
+    content: " new";
+    color: blue;
+    text-transform: uppercase;
+}
+a {
     color: cornflowerblue;
     list-style-type: armenian;
     size: 20px;
 }
-.menu li a{
-    color: #8B00FF;
-    size: 25px;
-}
-.message input text{
-    height: 15px;
-    width: 250px;
-    font-style: italic;
-}
-.message input{
+
+a:hover {
     color: #3e59cc;
-    font-style: inherit;
+}
+/*Поля "Напишите нам"*/
+.email:focus{
+    color: #7a4110;
+    background-color: #e1f6c8;
+}
+form input {
+    text-transform: capitalize;
+}
+.email{
+    text-transform: none;
+}
+/*Таблица харктеристик*/
+table{
+    border: 1px solid #000000;
+    border-collapse: collapse;
+}
+table td{
+    border: 1px solid #000000;
+    text-align: center;
+    vertical-align: middle;
 }
