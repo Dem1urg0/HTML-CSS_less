@@ -1,64 +1,100 @@
 /*Параметры соновных блоков*/
-.container{
-    width:800px;
+*{
+    box-sizing: border-box;
+}
+.container {
+    width: 800px;
     margin: 0 auto;
 }
-.header{
-    background-color: #2118FF;
+
+.header {
+    background-color: #738fff;
     height: 100px;
 }
-.content{
+
+.content {
     background-color: #E1E0E1;
     clear: both;
 }
-.footer{
+
+.footer {
     background-color: #905BAE;
     height: 100px;
+    clear: both;
 }
+
 body {
     background-color: #f8f8f8;
 }
-/*Меню*/
-.menu {
 
+/*Позицианирование header*/
+.logo,.namestore {
+    float: left;
 }
+.menu{
+    margin-left: auto;
+    float: right;
+    margin-right: 15px ;
+}
+/*Позиционирование footer*/
+.footer a,p{
+    float: right;
+    margin-top: 70px;
+    margin-right: 15px;
+}
+/*Логотип*/
+.logo {
+    margin-left: 25px;
+    margin-top: 10px;
+}
+/*Название магазина*/
+.namestore {
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+/*Меню*/
 .menu li:first-child {
     border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .menu li:last-child {
-    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-
 .menu li {
     width: 100px;
-    height: 40px;
+    height: 46px;
     list-style-type: none;
     border: 1px solid #000;
     text-align: center;
-}
+    float: left;
+    font-size: 18px;
+    background-color: #203d93;
+    }
 
 .menu li a {
-    color: #9667ec;
-    size: 25px;
+    color: #e16385;
+    vertical-align: middle;
 }
+
 .menu li a:hover {
     color: #1896FF;
 }
-.menu li a:active{
+
+.menu li a:active {
     color: red;
 }
-.menu .new:after{
+
+.menu .new:after {
     content: " new";
-    color: blue;
+    color: #c2c2f6;
     text-transform: uppercase;
 }
-/*Логотип*/
-.logo{
-    margin-left: 25px;
-    margin-top: 10px;
+
+/*Товар в каталоге*/
+.tov-cat li{
     float: left;
 }
 h3 {
@@ -71,12 +107,13 @@ h3 {
 .namestore {
     color: blue;
 }
+
 /*Рамка вокрук фото товара*/
-img[alt="phone"],img[alt="phone1"] {
+img[alt="phone"], img[alt="phone1"] {
     outline: none;
 }
 
-img[alt="phone"]:hover,img[alt="phone1"]:hover {
+img[alt="phone"]:hover, img[alt="phone1"]:hover {
     outline: 3px solid #3e59cc;
 }
 
@@ -106,15 +143,16 @@ img[alt="phone"]:hover,img[alt="phone1"]:hover {
     height: 30px;
 }
 
- a {
+a {
     text-decoration: none;
 }
 
 h2, h3, .heading {
     text-align: center;
 }
-a {
-    color: cornflowerblue;
+
+.link {
+    color: #adbaf8;
     list-style-type: armenian;
     size: 20px;
 }
@@ -122,23 +160,28 @@ a {
 a:hover {
     color: #3e59cc;
 }
+
 /*Поля "Напишите нам"*/
-.email:focus{
+.email:focus {
     color: #7a4110;
     background-color: #e1f6c8;
 }
+
 form input {
     text-transform: capitalize;
 }
-.email{
+
+.email {
     text-transform: none;
 }
+
 /*Таблица харктеристик*/
-table{
+table {
     border: 1px solid #000000;
     border-collapse: collapse;
 }
-table td{
+
+table td {
     border: 1px solid #000000;
     text-align: center;
     vertical-align: middle;
