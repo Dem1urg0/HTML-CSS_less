@@ -94,8 +94,42 @@ body {
 }
 
 /*Товар в каталоге*/
-.tov-cat li{
+.tov1,.tov2 {
+    list-style-type: none;
     float: left;
+    margin-left: -40px;
+}
+.tov1 a,.tov2 a{
+    font-size: 25px;
+}
+.tov2{
+    clear: both;
+}
+.content ul{
+    background-color: #E1E0E1;
+}
+/*Страница товара*/
+.phototov{
+    float: left;
+}
+h2, h3, .heading1 {
+    text-align: center;
+}
+.heading1{
+    margin-left: 270px;
+}
+.heading2{
+    clear: both;
+}
+/*Кнопка купить*/
+.buy{
+    height: 25px;
+    width: 95px;
+}
+.buy1{
+    height: 30px;
+    width: 225px;
+    margin-left: 20px;
 }
 h3 {
     color: black;
@@ -103,7 +137,6 @@ h3 {
     font-weight: 400;
     background-color: #eaeaea;
 }
-
 .namestore {
     color: blue;
 }
@@ -124,12 +157,13 @@ img[alt="phone"]:hover, img[alt="phone1"]:hover {
     line-height: 16px;
 }
 
-.seconde {
+.second {
     color: #484343;
     size: 16px;
     font-weight: 400;
     line-height: 24px;
     text-align: left;
+    margin-top: -15px;
 }
 
 .list li {
@@ -138,19 +172,9 @@ img[alt="phone"]:hover, img[alt="phone1"]:hover {
     color: cadetblue;
 }
 
-.list > li {
-    width: 100px;
-    height: 30px;
-}
-
 a {
     text-decoration: none;
 }
-
-h2, h3, .heading {
-    text-align: center;
-}
-
 .link {
     color: #adbaf8;
     list-style-type: armenian;
