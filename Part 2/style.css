@@ -5,16 +5,34 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
+.сlearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.padding-site{
+    padding-left: 98px;
+    padding-right: 98px;
+}
 .container{
     width: 1366px;
     margin: 0 auto;
 }
+/*Блок 1*/
 .slider{
     height: 800px;
     background-image: url("img/slider-img.jpg");
+    position: relative;
+}
+.header{
+    padding-top: 63px;
+}
+.menu{
+    float: right;
 }
 .menu-list{
     list-style-type: none;
+    float: left;
 }
 .menu-link{
     font-size: 14px;
@@ -22,6 +40,10 @@ body{
     color: #8c8c8c;
     text-transform: uppercase;
     text-decoration: none;
+    padding: 10px 13px;
+}
+.menu-link:hover{
+    color: #212121
 }
 .menu-link-active{
     color: #212121;
@@ -29,6 +51,10 @@ body{
     letter-spacing: 1.4px;
     border-bottom: 3px solid #212121;
     text-decoration: none;
+    padding: 10px 13px;
+}
+.slider-text{
+    margin-top: 283px;
 }
 .slider-trending{
     color: #43a047;
@@ -46,6 +72,10 @@ body{
     color: #6c6c6c;
     font-size: 14px;
     font-weight: 300;
+    width: 458px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 1.71;
 }
 .button{
     color: #212121;
@@ -62,6 +92,16 @@ body{
     line-height: 45px;
     letter-spacing: 3.6px;
     display:inline-block;
+    margin-top: 16px;
+}
+.button img[alt="arrow"]{
+    margin-left:20px;
+}
+.pagination{
+    position: absolute;
+    width: 1170px;
+    bottom: 19px;
+    text-align: center;
 }
 .circle{
     width: 30px;
@@ -69,10 +109,80 @@ body{
     display: inline-block;
     background-color: #c7c7c7;
     border-radius: 50%;
+    margin: 5px;
 }
 .circle-active{
     width: 40px;
     height: 40px;
     background-color: #212121;
     border-radius: 50%;
+    margin-bottom: 0;
+}
+.circle:hover {
+   background-color: #212121;
+}
+/*Блок 2*/
+.featured{
+    margin-top: 120px;
+}
+/*Меню*/
+.f-menu-list{
+    list-style-type: none;
+}
+.f-menu-list{
+    width: 80px;
+    height: 25px;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: bold;
+    color: #6c6c6c;
+}
+.f-menu-list-active{
+    width: 158px;
+    height: 27px;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: bold;
+    color: #212121;
+}
+/*Кнопка перехода далее*/
+.f-explore{
+    width: 158px;
+    height: 13px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.33;
+    letter-spacing: 3.6px;
+    color: #212121;
+}
+.f-product-active{
+    box-shadow: #212121;
+}
+.f-product-case-circle{
+    width: 48px;
+    height: 48px;
+    box-shadow: 0px 2px 4.9px 0.2px rgba(33, 33, 33, 0.35);
+    background-color: #fff;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+}
+.f-product-case-h2{
+    width: 145px;
+    height: 17px;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.36;
+    color: #212121;
+}
+.f-product-case-text{
+    width: 206px;
+    height: 33px;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.57;
+    color: #6c6c6c;
 }
