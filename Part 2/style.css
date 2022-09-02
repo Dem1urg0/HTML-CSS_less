@@ -22,7 +22,9 @@ body {
     width: 1366px;
     margin: 0 auto;
 }
+.footer{
 
+}
 /*Блок 1*/
 .slider {
     height: 800px;
@@ -33,7 +35,6 @@ body {
 .header {
     padding-top: 63px;
 }
-
 .menu {
     float: right;
 }
@@ -160,7 +161,8 @@ body {
     border-bottom: 1px solid #8c8c8c;
     padding-left: 11px;
 }
-.f-menu-link:hover{
+
+.f-menu-link:hover {
     color: #212121;
     border-bottom-color: #212121;
 }
@@ -300,10 +302,6 @@ body {
     background-image: url("img/promo-img.jpg");
 }
 
-.exclusive-header {
-    margin-top: 228px;
-}
-
 .exclusive-header, .exclusive-h2, .exclusive-content, .ex-button {
     margin-left: 52px;
 }
@@ -316,6 +314,7 @@ body {
     font-weight: bold;
     letter-spacing: 1.8px;
     color: #1e88e5;
+    margin-top: 228px;
 }
 
 .exclusive-h2 {
@@ -381,13 +380,19 @@ body {
 .trending-products-img {
     margin-left: 58px;
 }
+
 /*Блок 5*/
 .slider2 {
     height: 800px;
     background-image: url("img/slider.jpg");
     position: relative;
 }
-.slider2-trending{
+
+.slider2-text {
+    padding-top: 287px;
+}
+
+.slider2-hotdeal {
     width: 112px;
     height: 17px;
     font-family: Montserrat;
@@ -396,4 +401,84 @@ body {
     letter-spacing: 1.8px;
     color: #e53935;
     text-transform: uppercase;
+}
+
+.slider2-h2 {
+    margin-top: 22px;
+}
+
+/*Блок 6*/
+.exclusive_prod-img {
+    padding-right: 0px;
+    padding-top: 120px;
+}
+
+.exclusive_prod-block1 {
+    background-image: url("img/product-1-lg.jpg");
+    width: 570px;
+    height: 570px;
+    object-fit: contain;
+    float: left;
+}
+
+.exclusive2-header {
+    margin-top: 186px;
+}
+
+.ex_p_block, .ex_p_block2 {
+    margin-left: 30px;
+}
+
+.ex_p_block2 {
+    margin-top: 27px;
+}
+
+.exclusive2-content {
+    width: 332px;
+}
+
+/*Блок 7*/
+.mobile-app {
+    background-image: url("img/back-img.jpg");
+    width: 1366px;
+    height: 516px;
+    margin-top: 120px;
+}
+
+.mobile-app_text {
+    padding-top: 125px;
+}
+
+.mobile-app_mobile-app {
+    width: 139px;
+    height: 17px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1.8px;
+    color: #6c6c6c;
+    text-transform: uppercase;
+}
+
+.mobile-app-h2 {
+    width: 442px;
+    height: 116px;
+    margin-top: 22px;
+}
+
+.mobile-app_content {
+    width: 413px;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 300;
+    color: #6c6c6c;
+    margin-top: 26px;
+}
+
+.mobile-app img {
+    margin-top: 33px;
+}
+
+img[alt="apple"] {
+    margin-left: 10px;
 }
