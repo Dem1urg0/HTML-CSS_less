@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9f5a6022-c9e5-43ae-acd8-97f44c916e2d" name="Changes" comment="" />
+    <list default="true" id="9f5a6022-c9e5-43ae-acd8-97f44c916e2d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,6 +31,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/Projects/geekbrains_les&homw/HTML-CSS_less/Part 3",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -39,6 +44,7 @@
       <option name="presentableId" value="Default" />
       <updated>1662203327917</updated>
       <workItem from="1662203329078" duration="2970000" />
+      <workItem from="1662371712577" duration="1355000" />
     </task>
     <servers />
   </component>
