@@ -22,9 +22,20 @@ body {
     width: 1366px;
     margin: 0 auto;
 }
-.footer{
 
+.footer {
+    min-height: 100%;
+    width: 1366px;
+    margin: 0 auto;
+    height: 384px;
+    background-color: #f7f7f7;
+    margin-top: -384px;
 }
+
+.clr {
+    height: 384px;
+}
+
 /*Блок 1*/
 .slider {
     height: 800px;
@@ -35,6 +46,7 @@ body {
 .header {
     padding-top: 63px;
 }
+
 .menu {
     float: right;
 }
@@ -481,4 +493,179 @@ body {
 
 img[alt="apple"] {
     margin-left: 10px;
+}
+
+/*Footer*/
+.footer-text {
+    padding-top: 120px;
+    padding-left: 98px;
+    padding-left: 98px;
+}
+
+.contact-us {
+    float: left;
+    width: 230px;
+    height: 150px;
+}
+
+.contact-us_h2 {
+    width: 140px;
+    height: 18px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1.8px;
+    color: #6c6c6c;
+    text-transform: uppercase;
+
+}
+
+.contact-us_info {
+    margin-top: 24px;
+    width: 228px;
+    height: 108px;
+    font-family: Montserrat;
+    font-size: 14px;
+    color: #212121;
+    line-height: 1.57;
+}
+
+.inform {
+    float: left;
+    width: 422px;
+    height: 112px;
+    margin-left: 80px;
+}
+
+.inform_h2 {
+    width: 250px;
+    height: 18px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1.8px;
+    color: #6c6c6c;
+    text-transform: uppercase;
+}
+
+.inform_sales {
+    margin-top: 25px;
+    float: left;
+    width: 132px;
+    height: 62px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: bold;
+    color: #212121;
+    text-transform: uppercase;
+    line-height: 1.86;
+}
+
+.inform_architect {
+    margin-left: 103px;
+    float: left;
+    margin-top: 25px;
+    float: left;
+    width: 180px;
+    height: 62px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: bold;
+    color: #212121;
+    text-transform: uppercase;
+    line-height: 1.86;
+}
+
+.lets-stay {
+    float: left;
+    width: 385px;
+    margin-left: 78px;
+}
+
+.lets-stay_h2 {
+    width: 245px;
+    height: 18px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: bold;
+    color: #6c6c6c;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+}
+
+.lets-stay_text {
+    margin-top: 24px;
+    width: 378px;
+    height: 40px;
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 1.57;
+    color: #212121;
+}
+
+.lets-stay_email {
+    margin-top: 26px;
+    width: 360px;
+    height: 48px;
+    object-fit: contain;
+    border: solid 1px #d9dee1;
+    background-color: #fff;
+    clear: both;
+    font-family: Montserrat;
+    font-size: 16px;
+    line-height: 1.57;
+    text-align: left;
+    color: #6c6c6c;
+    font-weight: 400;
+}
+
+.lets-stay_email {
+    padding-bottom: 2px;
+    padding-left: 19px;
+    background: url("img/plane.png") no-repeat 345px 17px;
+}
+
+.bottom {
+    clear: both;
+}
+
+.bottom {
+    width: 100%;
+    height: 25px;
+    padding-top: 65px;
+}
+
+.copyr {
+    width: 380px;
+    height: 18px;
+    object-fit: contain;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 2.17;
+    letter-spacing: 0.6px;
+    text-align: left;
+    color: #6c6c6c;
+    text-transform: uppercase;
+    float: left;
+}
+
+.social {
+    width: 130px;
+    float: left;
+    margin-left: 158px;
+}
+
+.terms {
+    width: 358px;
+    height: 17px;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 2.17;
+    letter-spacing: 0.6px;
+    color: #6c6c6c;
+    text-transform: uppercase;
+    float: left;
+    margin-left: 168px;
 }
