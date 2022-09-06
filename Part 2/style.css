@@ -178,7 +178,7 @@ body {
     padding-left: 11px;
 }
 
-.f-menu-link:hover {
+.f-menu-link:hover,.p-menu-link:hover {
     color: #212121;
     border-bottom-color: #212121;
 }
@@ -721,15 +721,54 @@ img[alt="apple"] {
     color: #212121;
     text-transform: uppercase;
 }
-.number-email-address{
-    width: 282px;
-    height: 138px;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 1.43;
-    text-align: center;
-    color: #6c6c6c;
-    margin-top: 23px;
-    margin-left: 44px;
+/*Product page*/
+.product_range{
+    width: 595px;
+    height: 75px;
 }
+
+.p-menu-link {
+    text-decoration: none;
+    color: #8c8c8c;
+}
+.p-menu-link-active {
+    color: #212121;
+    border-bottom: 3px solid #212121;
+    text-decoration: none;
+    padding: 7px;
+    padding-right: 35px;
+}
+.p-menu-list {
+    font-family: Montserrat;
+    font-weight: bold;
+    float: left;
+    list-style-type: none;
+    width: 95px;
+    height: 27px;
+    font-size: 18px;
+    letter-spacing: 1.8px;
+    text-align: left;
+    color: #6c6c6c;
+    text-transform: uppercase;
+    margin-top: 71px;
+}
+.p-menu-list:nth-child(3) {
+    margin-left: 10px;
+}
+.p-menu-list:nth-child(4) {
+    margin-left: 20px;
+}
+.p-menu-list:nth-child(5) {
+    margin-left: 70px;
+}
+.p-menu-list:nth-child(6) {
+    margin-left: 45px;
+}
+.tp-iblock3{
+    margin-bottom: 0px;
+}
+.p-spin{
+    margin-left:595px;
+    margin-bottom: 140px;
+}
+/*Products_deails*/
