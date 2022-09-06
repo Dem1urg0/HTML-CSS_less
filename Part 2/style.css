@@ -23,6 +23,7 @@ body {
 .container {
     width: 1366px;
     margin: 0 auto;
+    min-height: 100%;
 }
 
 .footer {
@@ -36,6 +37,7 @@ body {
 
 .clr {
     height: 384px;
+    clear: both;
 }
 
 /*Блок 1*/
@@ -686,5 +688,19 @@ img[alt="apple"] {
     margin-top: 155px;
 }
 .geo{
-    min-height: 100%
+    min-height: 100%;
+    list-style-type: none;
+}
+.geo1,.geo2,.geo3{
+    height: 370px;
+    width: 370px;
+    float: left;
+    outline: solid 1px #cccccc;
+    background-color: #fff;
+    margin-left: 30px;
+    margin-top: 71px;
+    margin-bottom: 121px;
+}
+.geo1{
+    margin-left: 0px;
 }
