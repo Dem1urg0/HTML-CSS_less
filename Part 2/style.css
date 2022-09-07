@@ -705,12 +705,12 @@ img[alt="apple"] {
     margin-left: 0px;
 }
 .point{
-    margin-top: 48px;
+    margin-top: 44px;
     margin-left: 166px;
 }
 .geo_h2{
     margin-left: 117px;
-    margin-top: 34px;
+    margin-top: 20px;
     width: 144px;
     height: 21px;
     font-family: Montserrat;
@@ -720,6 +720,13 @@ img[alt="apple"] {
     text-align: center;
     color: #212121;
     text-transform: uppercase;
+}
+.number-email-address{
+    height: 138px;
+    width: 320px;
+    margin-left: 25px;
+    margin-top: 23px;
+    text-align: center;
 }
 /*Product page*/
 .product_range{
@@ -772,3 +779,120 @@ img[alt="apple"] {
     margin-bottom: 140px;
 }
 /*Products_deails*/
+.p-d-header{
+    background-color: #f4f4f4;
+    height: 71px;
+    margin-top: 29px;
+}
+.p-d-menu-list{
+    margin-top: 0px;
+    padding-top: 28px;
+    margin-left: 20px;
+    width: 100px;
+}
+.p-d-menu-list:nth-child(2){
+    margin-left: 0px;
+}
+.p-d-menu-list:nth-child(1){
+    margin-left: 205px;
+}
+.p-d-menu-link-active{
+    color: #212121;
+}
+/*Инфо о товаре*/
+.order-pic{
+    margin-top: 70px;
+}
+.order-info{
+    width: 510px;
+    float: left;
+    margin-left: 56px;
+    margin-top: 120px;
+}
+.order-info-h2{
+    margin-left: 142px;
+}
+.order-info-hotdeal{
+    margin-left: 208px;
+    margin-top: 23px;
+    margin-bottom: 36px;
+}
+.dollar{
+    margin-left: 140px;
+    margin-right: 20px;
+}
+.price{
+    width: 237px;
+    height: 57px;
+    font-family: Montserrat;
+    font-size: 72px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 0.67;
+    text-align: center;
+    color: #212121;
+}
+.price-number{
+    margin-bottom: 31px;
+}
+.order-info-p{
+    width: 500px;
+    height: 260px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 0.4px;
+    color: #212121;
+    margin-top: 49px;
+}
+.order-info-h2{
+    width: 255px;
+    height: 35px;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #212121;
+}
+.p-buy-button{
+    width: 510px;
+    height: 71px;
+    object-fit: contain;
+    border-radius: 35px;
+    box-shadow: 0px 2px 4.9px 0.2px rgba(33, 33, 33, 0.35);
+    background-color: #f44336;
+    font-family: Montserrat;
+    font-size: 27px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.09;
+    letter-spacing: 4.4px;
+    text-align: center;
+    color: #fff;
+    line-height: 75px;
+    margin-top: 0;
+}
+/*Фото товара*/
+img[alt="arrow-white"]{
+    margin-left: 20px;
+
+}
+.order-pic{
+    height: 651px;
+    width: 570px;
+    float: left;
+}
+img[alt="padding-product1"]{
+    margin-left: 150px;
+    margin-top: 10px;
+}
+img[alt="padding-product2"],img[alt="padding-product3"]{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+/*Отступ от последних фото на странице*/
+.p-block{
+    margin-bottom: 120px;
+}
