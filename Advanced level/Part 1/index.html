@@ -3,26 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header__left">
-                <a href="#" class="logo">
-                    <img src="img/logo.png" alt="logo">BRAND
-                </a>
-                <form action="#" class="form">
-                    <div class="form__browse_">Browse</div>
-                    <input type="text">
-                    <button>0</button>
-                </form>
-            </div>
-            <div class="header__right">
-                <img src="img/cart.svg" alt="cart">
-                <a href="#" class="button">My Account</a>
+<header class="header">
+    <div class="container header__content">
+        <div class="header__left">
+            <a href="#" class="logo">
+                <img class="logo__img" src="img/logo.png" alt="logo">BRAND
+            </a>
+            <form action="#" class="form">
+                <div class="form__browse_">Browse</div>
+                <input type="text">
+                <button>0</button>
+            </form>
+        </div>
+        <div class="header__right">
+            <img class="cart" src="img/cart.svg" alt="cart">
+            <a href="#" class="button">My Account</a>
+        </div>
+    </div>
+</header>
+<nav>
+    <div class="container">
+        <ul class="menu">
+            <li class="menu__list"><a href="" class="menu__link">Home</a></li>
+            <li class="menu__list"><a href="" class="menu__link">Man</a></li>
+            <li class="menu__list"><a href="" class="menu__link">Women</a></li>
+            <li class="menu__list"><a href="" class="menu__link">Kids</a></li>
+            <li class="menu__list"><a href="" class="menu__link">Accoseriese</a></li>
+            <li class="menu__list"><a href="" class="menu__link">Featured</a></li>
+            <li class="menu__list"><a href="" class="menu__link">Hot Deals</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="promo">
+    <div class="container promo__content">
+        <div class="promo__text">
+            <p class="promo__text_big">THE BRAND</p>
+            <p class="promo__text_mini">OF LUXERIOUS FASHION</p>
+        </div>
+    </div>
+</div>
+<div class="offer container">
+    <div class="offer__content">
+        <div class="offer__content__big">
+            <div class="offer__text">
+                <p>hOT dEAL</p>
+                <p>FOR MEN</p>
             </div>
         </div>
-    </header>
+        <div class="offer__content__mini">
+            <div class="offer__text">
+                <p>hOT dEAL</p>
+                <p>FOR MEN</p>
+            </div>
+        </div>
+    </div>
+    <div class="offer__content">
+        <div class="offer__content__mini">
+            <div class="offer__text">
+                <p>hOT dEAL</p>
+                <p>FOR MEN</p>
+            </div>
+        </div>
+        <div class="offer__content__big">
+            <div class="offer__text">
+                <p>hOT dEAL</p>
+                <p>FOR MEN</p>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
