@@ -144,10 +144,8 @@ body{
 }
 .logo__bran-d{
     height: 19px;
-    object-fit: contain;
-    font-family: Lato;
-    font-size: 27px;
-    font-weight: 600;
+    font-size: 26px;
+    font-weight: 900;
     line-height: 1.19;
     letter-spacing: 0.68px;
     color: #f16d7f;
@@ -212,3 +210,62 @@ body{
  .promo__text_mini span{
      color: #f16d7f;
  }
+ .fetured_items__header{
+     text-align: center;
+     margin-bottom: 60px;
+ }
+ .fetured_items__header p{
+     margin-top: 16px;
+     color: #9f9f9f;
+ }
+ .fetured_items__list{
+     display: flex;
+     flex-wrap: wrap;
+ }
+ .fetured_items__products__list__product{
+     width: 261px;
+     height: 342px;
+     margin-left: 32px;
+     margin-bottom: 40px;
+ }
+.fetured_items__products__list__product:first-child ,.fetured_items__products__list__product:nth-child(5){
+    margin-left: 0px;
+}
+.f_i_l_prod_p1{
+    margin-top: 20px;
+    font-size: 14px;
+    color: #222;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.f_i_l_prod_p2{
+    margin-top: 17px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #f16d7f;
+}
+.browse__all{
+    width: 212px;
+    height: 52px;
+    background-color: #f16d7f;
+    text-align: center;
+    line-height: 3.38;
+    margin-left: 462px;
+    margin-top: 40px;
+    margin-bottom: 113px;
+
+}
+.browse__all a{
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 3.38;
+    letter-spacing: 0.4px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+
+}
+.browse__all a img{
+    margin-left: 5px;
+    margin-bottom: 2px;
+}
