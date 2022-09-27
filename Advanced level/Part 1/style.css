@@ -318,3 +318,129 @@ body{
     margin-left: 5px;
     margin-bottom: 2px;
 }
+.offer_block{
+    display: flex;
+    margin-bottom: 97px;
+}
+.offer_box{
+    width: 767px;
+    height: 529px;
+    object-fit: contain;
+    background-image: url("img/image.jpg");
+}
+.offer__h1{
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    text-align: left;
+    color: #fff;
+    margin-left: 39px;
+    margin-top: 146px;
+}
+.OFFER_30{
+    font-size: 53.5px;
+    letter-spacing: 1.34px;
+}
+.offer__span{
+    color: #f16d7f;
+}
+.offer__info{
+    width: 373px;
+    height: 529px;
+    background-color: #222224;
+    padding-left: 35px;
+}
+.offer__info figure{
+    margin-top: 50px;
+    display: flex;
+}
+
+.offer__info__text{
+    margin-left: 35px;
+}
+.offer__info__text h1{
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #fbfbfb;
+    margin-bottom: 17px;
+}
+.offer__info__text p1{
+    width: 220px;
+    height: 58px;
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.71;
+    letter-spacing: 0.35px;
+    color: #fbfbfb;
+}
+img[alt="sale"]{
+    width: 40px;
+    height: 40px;
+}
+img[alt="crown"]{
+    width: 49px;
+    height: 35px;
+}
+img[alt="cur"] {
+    width: 45px;
+    height: 32px;
+}
+.subscribe__block{
+    background-image: url("img/sub_back.jpg");
+    width: 1600px;
+    height: 438px;
+    margin: auto;
+    background-color: #f7f7f8;
+    background-blend-mode: color-burn;
+}
+.subscribe__content{
+    display: flex;
+    padding-top: 111px;
+}
+.quote img{
+    border-radius: 50%;
+    width: 83px;
+    height: 83px
+}
+.quote{
+    display: flex;
+}
+.quote__content{
+    margin-left: 28px;
+}
+.quote__text{
+    width: 415px;
+    height: 68px;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 1.63;
+    letter-spacing: 0.4px;
+}
+.quote__name{
+    font-size: 16px;
+    color: #f16d7f;
+    letter-spacing: 0.4px;
+    margin-top: 19px;
+}
+.quote__name span{
+    font-size: 14px;
+    color: #222224;
+    line-height: 1.63;
+}
+.subscribe__h1, .subscribe__h2{
+    font-size: 24px;
+    line-height: 1.71;
+    letter-spacing: 0.35px;
+    text-align: center;
+    color: #222224;
+    text-transform: uppercase;
+}
+.subscribe__h2{
+    font-size: 14px;
+}
+.subscribe__input{
+    width: 334px;
+    height: 46px;
+}
