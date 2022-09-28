@@ -10,6 +10,7 @@ body{
     box-shadow: 0 0 10px rgba(0,0,0,0.17);
     border: 1px solid #ececec;
     background-color: #ffffff;
+    min-width: 1600px;
 }
 .container{
     width: 1140px;
@@ -55,7 +56,6 @@ body{
     display: block;
 }
 .menu__link{
-    font-family: Lato;
     font-size: 14px;
     font-weight: 700;
     color: #222;
@@ -135,7 +135,6 @@ body{
 .logo__bran{
     height: 19px;
     object-fit: contain;
-    font-family: Lato;
     font-size: 27px;
     font-weight: 400;
     line-height: 1.19;
@@ -144,7 +143,7 @@ body{
 }
 .logo__bran-d{
     height: 19px;
-    font-size: 26px;
+    font-size: 27px;
     font-weight: 900;
     line-height: 1.19;
     letter-spacing: 0.68px;
@@ -184,7 +183,6 @@ body{
      height: 38px;
      background-color: #f16d7f;
      object-fit: contain;
-     font-family: Lato;
      font-size: 15px;
      font-weight: normal;
      font-stretch: normal;
@@ -389,11 +387,12 @@ img[alt="cur"] {
 }
 .subscribe__block{
     background-image: url("img/sub_back.jpg");
-    width: 1600px;
+    max-width: 1600px;
     height: 438px;
-    margin: auto;
+    margin: 0 auto;
     background-color: #f7f7f8;
     background-blend-mode: color-burn;
+    margin-bottom: 109px;
 }
 .subscribe__content{
     display: flex;
@@ -417,6 +416,7 @@ img[alt="cur"] {
     font-style: italic;
     line-height: 1.63;
     letter-spacing: 0.4px;
+    margin-top: 12px;
 }
 .quote__name{
     font-size: 16px;
@@ -429,6 +429,10 @@ img[alt="cur"] {
     color: #222224;
     line-height: 1.63;
 }
+.subscribe{
+    margin-left: 165px;
+    margin-top: 37px;
+}
 .subscribe__h1, .subscribe__h2{
     font-size: 24px;
     line-height: 1.71;
@@ -439,8 +443,86 @@ img[alt="cur"] {
 }
 .subscribe__h2{
     font-size: 14px;
+    margin-bottom: 35px;
 }
 .subscribe__input{
-    width: 334px;
+    border-top-left-radius: 46px;
+    border-bottom-left-radius: 46px;
+    width: 230px;
     height: 46px;
+    border: none;
+    background-color:#e1e1e1;
+    font-size: 14px;
+    line-height: 3.86;
+    letter-spacing: 0.35px;
+    color: rgba(34, 34, 36, 0.67);
+    padding-right: 90px;
+    box-sizing: border-box;
+    padding-left: 28px;
+}
+.subscribe__input:focus{
+    outline: none;
+}
+.subscribe__button{
+    height: 46px;
+    width: 104px;
+    background-color: #f16d7f;
+    border: none;
+    border-bottom-right-radius: 46px;
+    border-top-right-radius: 46px;
+    margin-left: -3px;
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    color: #fff;
+}
+.subscribe__button:hover{
+    box-shadow:  inset  0px 5px 8px 0 rgba(0, 0, 0, 0.16);
+}
+.footer_content{
+    height: 349px;
+    display: flex;
+}
+.footer_lu{
+    list-style-type: none;
+}
+.footer_lu a{
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    color: #898989;
+}
+.footer_lu li{
+    margin-bottom: 25px;
+}
+.description__text{
+    width: 430px;
+    height: 188px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.71;
+    letter-spacing: 0.35px;
+    color: #898989;
+    margin-top: 29px;
+}
+
+.company{
+    margin-left: 63px;
+    margin-right: 129px;
+}
+.information{
+    margin-right: 79px;
+}
+.company_h3, .information_h3,.shop_category_h3{
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.45px;
+    text-align: right;
+    color: #f16d7f;
+    margin-bottom: 45px;
+}
+.bottom{
+    height: 79px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #e6e6e6;
 }
