@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
@@ -17,22 +17,35 @@
                     class="logo__bran-d">D</span>
             </a>
             <form action="#" class="form">
-                <button class="form__browse">Browse <img class="form__browse__arrow" src="img/arrow.png" alt="logo">
-                </button>
+                <details class="form__browse">
+                    <summary>Browse</summary>
+                    <ul>
+                        <li>list</li>
+                        <li>list</li>
+                        <li>list</li>
+                    </ul>
+                </details>
                 <input type="text">
                 <button class="form__search"><img src="img/search.svg" alt="search" width="18px" height="18px"></button>
             </form>
         </div>
         <div class="header__right">
             <a href="#"><img class="cart" src="img/cart.svg" alt="cart"></a>
-            <a href="#" class="button">My Account <img src="img/arrow-white.png" alt="arrow-white"> </a>
+            <details class="button Account">
+                <summary>My Account</summary>
+                <ul>
+                    <li>list</li>
+                    <li>list</li>
+                    <li>list</li>
+                </ul>
+            </details>
         </div>
     </div>
 </header>
 <nav>
     <div class="container">
         <ul class="menu">
-            <li class="menu__list"><a href="" class="menu__link">Home</a></li>
+            <li class="menu__list active_list"><a href="index.html" class="menu__link">Home</a></li>
             <li class="menu__list"><a href="" class="menu__link">Man</a></li>
             <li class="menu__list"><a href="" class="menu__link">Women</a></li>
             <li class="menu__list"><a href="" class="menu__link">Kids</a></li>
@@ -208,6 +221,7 @@
         </div>
     </div>
 </div>
+<div class="clr"></div>
 <footer>
     <div class="footer_content container">
         <div class="description">
@@ -259,11 +273,11 @@
         <div class="bottom__content container">
             <p class="copyright">&copy;&nbsp;2017 Brand All Rights Reserved.</p>
             <div class="share">
-                <a href="#"><img src="img/facebook.png" alt="facebook"></a>
-                <a href="#"><img src="img/twitter.png" alt="twitter"></a>
-                <a href="#"><img src="img/in.png" alt="in"></a>
-                <a href="#"><img src="img/pint.png" alt="pint"></a>
-                <a href="#"><img src="img/google.png" alt="google"></a>
+                <a class="share__none" href="#"><img src="img/facebook.png" alt="facebook"></a>
+                <a class="share__confirm" href="#"><img src="img/twitter.png" alt="twitter"></a>
+                <a class="share__none" href="#"><img src="img/in.png" alt="in"></a>
+                <a class="share__none" href="#"><img src="img/pint.png" alt="pint"></a>
+                <a class="share__none" href="#"><img src="img/google.png" alt="google"></a>
             </div>
         </div>
     </div>
