@@ -655,3 +655,16 @@ footer{
     color: #f16d7f;
     text-transform: uppercase;
 }
+.drop{
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: 1px solid #ececec;
+    padding: 20px;
+}
+.drop__link{
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #646464;
+}
