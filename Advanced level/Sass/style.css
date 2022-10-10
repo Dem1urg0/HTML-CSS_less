@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.header {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: darkcyan;
+  height: 100px; }
+
+.content {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: navajowhite; }
+
+.footer {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #ccc;
+  height: 100px; }
+
+/*# sourceMappingURL=style.css.map */

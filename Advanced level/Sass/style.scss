@@ -1,0 +1,23 @@
+$width-site: 1200px;
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.header{
+  width: $width-site;
+  margin: 0 auto;
+  background-color: darkcyan;
+  height: 100px;
+}
+.content{
+  width: $width-site;
+  margin: 0 auto;
+  background-color: navajowhite;
+}
+.footer{
+  width: $width-site;
+  margin: 0 auto;
+  background-color: #ccc;
+  height: 100px;
+}
