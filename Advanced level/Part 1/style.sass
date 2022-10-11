@@ -15,7 +15,7 @@ body
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.17)
   border: 1px solid #ececec
   background-color: #ffffff
-  min-width: 1600px
+  min-width: $site-width
 
 .container
   max-width: 1140px
@@ -37,6 +37,24 @@ body
   display: flex
   align-items: center
   text-decoration: none
+  &__img
+    margin-right: 13px
+  &__bran
+    height: 19px
+    object-fit: contain
+    font-size: 27px
+    font-weight: 400
+    line-height: 1.19
+    letter-spacing: 0.68px
+    color: #222
+    &-d
+      height: 19px
+      font-size: 27px
+      font-weight: 900
+      line-height: 1.19
+      letter-spacing: 0.68px
+      color: $color-pink
+
 
 .form
   display: flex
@@ -46,9 +64,6 @@ body
 .header__right
   display: flex
   align-items: center
-
-.logo__img
-  margin-right: 13px
 
 .cart
   margin-right: 26px
@@ -174,59 +189,34 @@ body
 .offer4
   background-image: url("img/offer4.jpg")
 
-.offer__content__big
-  width: 560px
-  height: 542px
-  background-color: #ccc
-
-
-.offer__content__mini
-  width: 560px
-  height: 261px
-  background-color: #dadad2
-
 .offer
   padding-top: 100px
   padding-bottom: 100px
   display: flex
   justify-content: space-between
+  &__content
+    div:first-child
+      margin-bottom: 20px
+    &__big
+      width: 560px
+      height: 542px
+      background-color: #ccc
+    &__mini
+      width: 560px
+      height: 261px
+      background-color: #dadad2
+  &__text
+    background-color: #fff
+    padding: 16px 20px
+    float: left
+    text-transform: uppercase
+    margin-top: 26px
+    font-weight: 900
+    font-size: 18px
+  &__text2
+    font-size: 30px
+    color: $color-pink
 
-.offer__content div:first-child
-  margin-bottom: 20px
-
-.offer__text
-  background-color: #fff
-  padding: 16px 20px
-  float: left
-  text-transform: uppercase
-  margin-top: 26px
-  font-weight: 900
-  font-size: 18px
-
-.offer__text2
-  font-size: 30px
-  color: $color-pink
-
-
-.offer__text1
-
-
-.logo__bran
-  height: 19px
-  object-fit: contain
-  font-size: 27px
-  font-weight: 400
-  line-height: 1.19
-  letter-spacing: 0.68px
-  color: #222
-
-.logo__bran-d
-  height: 19px
-  font-size: 27px
-  font-weight: 900
-  line-height: 1.19
-  letter-spacing: 0.68px
-  color: $color-pink
 
 .form__search
   width: 38px
@@ -329,86 +319,87 @@ details[open] > summary::after
 .promo__text_mini span
   color: $color-pink
 
-.fetured_items__header
-  text-align: center
-  margin-bottom: 60px
+.fetured
+  &__header
+    text-align: center
+    margin-bottom: 60px
 
-.fetured_items__header p
-  margin-top: 16px
-  color: #9f9f9f
+    p
+      margin-top: 16px
+      color: #9f9f9f
 
-.fetured_items__list
-  display: flex
-  flex-wrap: wrap
+  &__list
+    display: flex
+    flex-wrap: wrap
 
-.fetured__product
-  width: 261px
-  height: 364px
-  margin-left: 32px
-  margin-bottom: 40px
-  text-decoration: none
-  position: relative
+    &__product
+      width: 261px
+      height: 364px
+      margin-left: 32px
+      margin-bottom: 40px
+      text-decoration: none
+      position: relative
 
-.fetured__product:hover
-  box-shadow: 0px 5px 8px 0 rgba(0, 0, 0, 0.16)
-  height: 364px
+      &:hover
+        box-shadow: 0px 5px 8px 0 rgba(0, 0, 0, 0.16)
+        height: 364px
 
-.fetured__product:hover .f_i_l_prod__add
-  display: block
+      &:hover &__add
+        display: block
 
-.fetured__product:hover .f_i_l_prod_price img[alt="stars"]
-  display: block
+      &:hover &__text__price img[alt="stars"]
+        display: block
+
+      &:hover &_img
+        filter: brightness(50%)
+
+      &:first-child, &:nth-child(5)
+        margin-left: 0
+
+      &_img
+        width: 100%
+        height: 280px
+
+      &__add
+        color: #ffffff
+        font-size: 13px
+        font-weight: 700
+        width: 123px
+        height: 39px
+        border: 1px solid #ffffff
+        text-align: center
+        text-decoration: none
+        line-height: 39px
+        display: none
+        position: absolute
+        top: 98px
+        left: 70px
+
+        &:hover
+          box-shadow: 0 0 5px #ffffff
+
+      &__text
+        padding: 20px 14px
+
+        &__name
+          font-size: 14px
+          color: #222
+          text-transform: uppercase
+          font-weight: 600
+          text-decoration: none
+
+        &__price
+          margin-top: 17px
+          font-size: 16px
+          font-weight: bold
+          color: $color-pink
+          display: flex
+          justify-content: space-between
+          text-decoration: none
 
 
-.fetured__product:hover .f_i_l_prod_img
-  filter: brightness(50%)
-
-.fetured__product:first-child, .fetured__product:nth-child(5)
-  margin-left: 0
-
-.f_i_l_prod_img
-  width: 100%
-  height: 280px
-
-.f_i_prod_text
-  padding: 20px 14px
-
-.f_i_l_prod_name
-  font-size: 14px
-  color: #222
-  text-transform: uppercase
-  font-weight: 600
-  text-decoration: none
-
-.f_i_l_prod_price
-  margin-top: 17px
-  font-size: 16px
-  font-weight: bold
-  color: $color-pink
-  display: flex
-  justify-content: space-between
-  text-decoration: none
-
-.fetured__product img[alt="stars"]
+img[alt="stars"]
   display: none
-
-.f_i_l_prod__add
-  color: #ffffff
-  font-size: 13px
-  font-weight: 700
-  width: 123px
-  height: 39px
-  border: 1px solid #ffffff
-  text-align: center
-  text-decoration: none
-  line-height: 39px
-  display: none
-  position: absolute
-  top: 98px
-  left: 70px
-
-.f_i_l_prod__add:hover
-  box-shadow: 0 0 5px #ffffff
 
 .browse__all
   width: 212px
@@ -420,79 +411,76 @@ details[open] > summary::after
   margin-top: 40px
   margin-bottom: 113px
 
+  a
+    font-size: 16px
+    font-weight: bold
+    line-height: 3.38
+    letter-spacing: 0.4px
+    text-align: center
+    color: #fff
+    text-decoration: none
+    display: block
+    height: 100%
 
-.browse__all a
-  font-size: 16px
-  font-weight: bold
-  line-height: 3.38
-  letter-spacing: 0.4px
-  text-align: center
-  color: #fff
-  text-decoration: none
-  display: block
-  height: 100%
+    img
+      margin-left: 5px
+      margin-bottom: 2px
 
-
-.browse__all a img
-  margin-left: 5px
-  margin-bottom: 2px
-
-.offer_block
+.offer_sale
   display: flex
   margin-bottom: 97px
 
-.offer_box
-  width: 767px
-  height: 529px
-  object-fit: contain
-  background-image: url("img/image.jpg")
+  &_box
+    width: 767px
+    height: 529px
+    object-fit: contain
+    background-image: url("img/image.jpg")
 
-.offer__h1
-  font-size: 32px
-  font-weight: bold
-  letter-spacing: 0.8px
-  text-align: left
-  color: #fff
-  margin-left: 39px
-  margin-top: 146px
+  &__h1
+    font-size: 32px
+    font-weight: bold
+    letter-spacing: 0.8px
+    text-align: left
+    color: #fff
+    margin-left: 39px
+    margin-top: 146px
 
-.OFFER_30
-  font-size: 53.5px
-  letter-spacing: 1.34px
+  &_30
+    font-size: 53.5px
+    letter-spacing: 1.34px
 
-.offer__span
-  color: $color-pink
+  &__span
+    color: $color-pink
 
-.offer__info
-  width: 373px
-  height: 529px
-  background-color: #222224
-  padding-left: 35px
+  &__info
+    width: 373px
+    height: 529px
+    background-color: #222224
+    padding-left: 35px
 
-.offer__info figure
-  margin-top: 50px
-  display: flex
+    figure
+      margin-top: 50px
+      display: flex
 
+    &__text
+      margin-left: 35px
 
-.offer__info__text
-  margin-left: 35px
+      h1
+        font-size: 20px
+        font-weight: bold
+        letter-spacing: 0.5px
+        color: #fbfbfb
+        margin-bottom: 17px
 
-.offer__info__text h1
-  font-size: 20px
-  font-weight: bold
-  letter-spacing: 0.5px
-  color: #fbfbfb
-  margin-bottom: 17px
-
-.offer__info__text p1
-  width: 220px
-  height: 58px
-  display: block
-  font-size: 14px
-  font-weight: 300
-  line-height: 1.71
-  letter-spacing: 0.35px
-  color: #fbfbfb
+      p1
+        width: 220px
+        height: 58px
+        display: block
+        font-size: 14px
+        font-weight: 300
+        line-height: 1.71
+        letter-spacing: 0.35px
+        color: #fbfbfb
 
 img[alt="sale"]
   width: 40px
@@ -508,7 +496,7 @@ img[alt="cur"]
 
 .subscribe__block
   background-image: url("img/sub_back.jpg")
-  max-width: 1600px
+  max-width: $site-width
   height: 438px
   margin: 0 auto
   background-color: #f7f7f8
@@ -519,36 +507,36 @@ img[alt="cur"]
   display: flex
   padding-top: 111px
 
-.quote img
-  border-radius: 50%
-  width: 83px
-  height: 83px
-
 .quote
   display: flex
 
-.quote__content
-  margin-left: 28px
+  img
+    border-radius: 50%
+    width: 83px
+    height: 83px
 
-.quote__text
-  width: 415px
-  height: 68px
-  font-size: 16px
-  font-style: italic
-  line-height: 1.63
-  letter-spacing: 0.4px
-  margin-top: 12px
+  &__content
+    margin-left: 28px
 
-.quote__name
-  font-size: 16px
-  color: $color-pink
-  letter-spacing: 0.4px
-  margin-top: 19px
+  &__text
+    width: 415px
+    height: 68px
+    font-size: 16px
+    font-style: italic
+    line-height: 1.63
+    letter-spacing: 0.4px
+    margin-top: 12px
 
-.quote__name span
-  font-size: 14px
-  color: #222224
-  line-height: 1.63
+  &__name
+    font-size: 16px
+    color: $color-pink
+    letter-spacing: 0.4px
+    margin-top: 19px
+
+    span
+      font-size: 14px
+      color: #222224
+      line-height: 1.63
 
 .quote_slider
   margin-top: 30px
@@ -561,85 +549,85 @@ img[alt="cur"]
   border: none
   margin-right: 7px
 
-.slider_button:hover
-  background-color: #9f9f9f
+  &:hover
+    background-color: #9f9f9f
 
-.slider_button_active
-  background-color: $color-pink
+  &_active
+    background-color: $color-pink
 
-.slider_button_active:hover
-  background-color: $color-pink
+    &:hover
+      background-color: $color-pink
 
 .subscribe
   margin-left: 165px
   margin-top: 37px
 
-.subscribe__h1, .subscribe__h2
-  font-size: 24px
-  line-height: 1.71
-  letter-spacing: 0.35px
-  text-align: center
-  color: #222224
-  text-transform: uppercase
+  &__h1, &__h2
+    font-size: 24px
+    line-height: 1.71
+      letter-spacing: 0.35px
+    text-align: center
+    color: #222224
+    text-transform: uppercase
 
-.subscribe__h2
-  font-size: 14px
-  margin-bottom: 35px
+  &__h2
+    font-size: 14px
+    margin-bottom: 35px
 
-.subscribe__input
-  border-top-left-radius: 46px
-  border-bottom-left-radius: 46px
-  width: 230px
-  height: 46px
-  border: none
-  background-color: #e1e1e1
-  font-size: 14px
-  line-height: 3.86
-  letter-spacing: 0.35px
-  color: rgba(34, 34, 36, 0.67)
-  padding-right: 90px
-  box-sizing: border-box
-  padding-left: 28px
+  &__button
+    height: 46px
+    width: 104px
+    background-color: $color-pink
+    border: none
+    border-bottom-right-radius: 46px
+    border-top-right-radius: 46px
+    margin-left: -3px
+    font-size: 14px
+    letter-spacing: 0.35px
+    color: #fff
 
-.subscribe__input:focus
-  outline: none
+    &:hover
+      box-shadow: inset 0px 1px 8px 0 rgba(0, 0, 0, 0.16)
 
-.subscribe__button
-  height: 46px
-  width: 104px
-  background-color: $color-pink
-  border: none
-  border-bottom-right-radius: 46px
-  border-top-right-radius: 46px
-  margin-left: -3px
-  font-size: 14px
-  letter-spacing: 0.35px
-  color: #fff
+  &__input
+    border-top-left-radius: 46px
+    border-bottom-left-radius: 46px
+    width: 230px
+    height: 46px
+    border: none
+    background-color: #e1e1e1
+    font-size: 14px
+    line-height: 3.86
+    letter-spacing: 0.35px
+    color: rgba(34, 34, 36, 0.67)
+    padding-right: 90px
+    box-sizing: border-box
+    padding-left: 28px
 
-.subscribe__button:hover
-  box-shadow: inset 0px 1px 8px 0 rgba(0, 0, 0, 0.16)
+    &:focus
+      outline: none
 
 .clr
   height: 428px
 
-footer
+.footer
   margin-top: -428px
 
-.footer_content
-  height: 349px
-  display: flex
+  &_content
+    height: 349px
+    display: flex
 
-.footer_lu
-  list-style-type: none
+  &_lu
+    list-style-type: none
 
-.footer_lu a
-  text-decoration: none
-  font-size: 16px
-  letter-spacing: 0.4px
-  color: #898989
+    a
+      text-decoration: none
+      font-size: 16px
+      letter-spacing: 0.4px
+      color: #898989
 
-.footer_lu li
-  margin-bottom: 25px
+    li
+      margin-bottom: 25px
 
 .description__text
   width: 430px
@@ -673,10 +661,10 @@ footer
   margin: 0 auto
   background-color: #e6e6e6
 
-.bottom__content
-  display: flex
-  justify-content: space-between
-  padding-top: 24px
+  &__content
+    display: flex
+    justify-content: space-between
+    padding-top: 24px
 
 .copyright
   font-size: 16px
@@ -689,57 +677,57 @@ footer
   display: flex
   margin-top: 3px
 
-.share a
-  display: block
-  width: 32px
-  height: 32px
-  margin-right: 8px
+  a
+    display: block
+    width: 32px
+    height: 32px
+    margin-right: 8px
 
 .share__confirm
   background-color: $color-pink
   position: relative
 
+  &:hover
+    background-color: rgb(217, 100, 114)
+
+  img[alt="twitter"]
+    left: 8px
+    top: 9px
+    position: absolute
+
 .share__none
   background-color: #ffffff
   position: relative
 
-.share__none:hover
-  background-color: #e6e6e6
+  &:hover
+    background-color: #e6e6e6
 
-.share__confirm:hover
-  background-color: rgb(217, 100, 114)
+  img[alt="facebook"]
+    left: 11px
+    top: 8px
+    position: absolute
 
-.share__none img[alt="facebook"]
-  left: 11px
-  top: 8px
-  position: absolute
+  img[alt="in"]
+    left: 9px
+    top: 9px
+    position: absolute
 
-.share__none img[alt="in"]
-  left: 9px
-  top: 9px
-  position: absolute
+  img[alt="pint"]
+    left: 10px
+    top: 8px
+    position: absolute
 
-.share__none img[alt="pint"]
-  left: 10px
-  top: 8px
-  position: absolute
-
-.share__none img[alt="google"]
-  left: 8px
-  top: 9px
-  position: absolute
-
-.share__confirm img[alt="twitter"]
-  left: 8px
-  top: 9px
-  position: absolute
+  img[alt="google"]
+    left: 8px
+    top: 9px
+    position: absolute
 
 .active_list
   border-bottom: solid 3px #ef5b70
 
 .checkout_content
   height: 148px
-  min-width: 1600px
+  min-width: $site-width
   background-color: #f8f3f4
 
 .second_nav
@@ -747,48 +735,48 @@ footer
   justify-content: space-between
   padding-top: 65px
 
-.second_nav p
-  font-size: 14px
-  font-weight: 300
-  line-height: 1.43
-  color: #636363
-  text-transform: uppercase
+  p
+    font-size: 14px
+    font-weight: 300
+    line-height: 1.43
+    color: #636363
+    text-transform: uppercase
 
-.second_nav span
-  color: $color-pink
-  font-weight: 600
+  span
+    color: $color-pink
+    font-weight: 600
 
-.second_nav h1
-  font-size: 24px
-  font-weight: 900
-  line-height: 0.83
-  color: $color-pink
-  text-transform: uppercase
+  h1
+    font-size: 24px
+    font-weight: 900
+    line-height: 0.83
+    color: $color-pink
+    text-transform: uppercase
 
 .order_info
   margin-top: 31px
 
-.order_info h2
-  text-transform: uppercase
-  font-size: 16px
-  font-weight: bold
-  color: #222
-  margin-bottom: 31px
+  h2
+    text-transform: uppercase
+    font-size: 16px
+    font-weight: bold
+    color: #222
+    margin-bottom: 31px
 
 .register
   margin-left: 35px
 
+  h3
+    color: #222
+    font-size: 13px
+    text-transform: uppercase
+    margin-top: 8px
 
-.register h3
-  +font(#222,13)
-  text-transform: uppercase
-  margin-top: 8px
-
-.register p
-  font-size: 13px
-  text-align: left
-  color: #b3b2b2
-  margin-top: 15px
+  p
+    font-size: 13px
+    text-align: left
+    color: #b3b2b2
+    margin-top: 15px
 
 .check
   margin-top: 34px
@@ -799,22 +787,23 @@ footer
   margin-top: 20px
   margin-bottom: 33px
 
+  &_text
+    display: flex
+    margin-bottom: 15px
+
+    p
+      margin-top: -2px
+
+    &_reg
+      margin-bottom: 33px
+
 .input_text
   font-size: 12px !important
   color: #222 !important
   text-transform: uppercase
   margin-left: 14px
   box-sizing: border-box
-
-.reg_text
-  display: flex
-  margin-bottom: 15px
-
-.reg_text_reg
-  margin-bottom: 33px
-
-.reg_text p
-  margin-top: -2px
+  font-weight: 600
 
 .fa-solid
   color: #9f9f9f
@@ -828,15 +817,15 @@ footer
   background-color: #fff
   font-size: 14px
   text-transform: uppercase
-  font-weight: 400
+  font-weight: 600
   margin-top: 23px
 
 .adress
   margin-top: 89px
 
-.adress_content
-  display: none
-  margin-bottom: 18px
+  &_content
+    display: none
+    margin-bottom: 18px
 
 .order_info:hover .adress_content
   display: flex
@@ -844,25 +833,33 @@ footer
 .log_in
   margin-left: 292px
 
-.log_in h2
-  font-size: 13px
-  color: #222
-  margin-bottom: 0
-  margin-bottom: 15px
+  &_button
+    width: 180px
+    height: 50px
+    object-fit: contain
+    border: solid 1px #eaeaea
+    background-color: #fff
+    font-size: 14px
+    font-weight: bold
 
-.log_in p
-  font-size: 13px
-  color: #b3b2b2
-  margin-bottom: 27px
+  h2
+    font-size: 13px
+    color: #222
+    margin-bottom: 15px
 
-.log_in h4
-  font-size: 12px
-  color: #222
-  margin-bottom: 16px
+  p
+    font-size: 13px
+    color: #b3b2b2
+    margin-bottom: 27px
 
-.log_in h4 span
-  color: #ff0d0d
-  font-size: 17px
+  h4
+    font-size: 12px
+    color: #222
+    margin-bottom: 16px
+
+    span
+      color: #ff0d0d
+      font-size: 17px
 
 .email, .pass
   width: 370px
@@ -877,15 +874,6 @@ footer
   color: #ff0d0d !important
   margin-bottom: 32px !important
 
-.log_in_button
-  width: 180px
-  height: 50px
-  object-fit: contain
-  border: solid 1px #eaeaea
-  background-color: #fff
-  font-size: 14px
-  font-weight: bold
-
 .forgot
   font-size: 14px
   color: #222
@@ -898,3 +886,8 @@ footer
   height: 1px
   object-fit: contain
   background-color: #e8e8e8
+
+.prod_slider
+  background-color: #f7f7f7
+  width: $site-width
+  height: 777px
