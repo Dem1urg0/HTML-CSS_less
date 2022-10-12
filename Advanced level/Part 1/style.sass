@@ -17,28 +17,34 @@ body
   background-color: #ffffff
   min-width: $site-width
 
+  &__content
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 100%
+
+  &__left
+    display: flex
+    align-items: center
+
+  &__right
+    display: flex
+    align-items: center
+
 .container
   max-width: 1140px
   min-width: 570px
   margin: 0 auto
 /*min-height: 100%*/
 
-.header__content
-  display: flex
-  justify-content: space-between
-  align-items: center
-  height: 100%
-
-.header__left
-  display: flex
-  align-items: center
-
 .logo
   display: flex
   align-items: center
   text-decoration: none
+
   &__img
     margin-right: 13px
+
   &__bran
     height: 19px
     object-fit: contain
@@ -47,6 +53,7 @@ body
     line-height: 1.19
     letter-spacing: 0.68px
     color: #222
+
     &-d
       height: 19px
       font-size: 27px
@@ -61,32 +68,37 @@ body
   align-items: center
   margin-left: 37px
 
-.header__right
-  display: flex
-  align-items: center
+.cart_menu
+  position: relative
+  &:hover .drop__cart
+    display: block
 
 .cart
   margin-right: 26px
+  &__line
+    width: 229px
+    height: 1px
+    background-color: rgba(237,237,237,0.74)
 
 .menu
   display: flex
   justify-content: center
   list-style: none
 
-.menu__list
-  padding: 20px
-  display: block
-  position: relative
+  &__list
+    padding: 20px
+    display: block
+    position: relative
 
-.menu__list:hover .drop
-  display: flex
+    &:hover .drop
+      display: flex
 
-.menu__link
-  font-size: 14px
-  font-weight: 700
-  color: #222
-  text-decoration: none
-  text-transform: uppercase
+  &__link
+    font-size: 14px
+    font-weight: 700
+    color: #222
+    text-decoration: none
+    text-transform: uppercase
 
 .drop
   border-radius: 5px
@@ -98,82 +110,156 @@ body
   top: 50px
   left: 0
 
-.drop_middle
-  left: -330px
-  right: auto
+  &_middle
+    left: -330px
+    right: auto
 
-.drop_middle:before
-  right: 450px
-  left: auto !important
+    &:before
+      right: 450px
+      left: auto !important
 
-.drop_right
-  right: 0
-  left: auto
+  &_right
+    right: 0
+    left: auto
 
-.drop_right:before
-  left: auto !important
-  right: 50px
+    &:before
+      left: auto !important
+      right: 50px
 
-.drop:before
-  content: ''
-  display: block
-  width: 10px
-  height: 10px
-  background-color: #ffffff
-  position: absolute
-  top: -6px
-  left: 31px
-  transform: rotate(45deg)
-  border-top: 1px solid #e8e8e8
-  border-left: 1px solid #e8e8e8
+  &:before
+    content: ''
+    display: block
+    width: 10px
+    height: 10px
+    background-color: #ffffff
+    position: absolute
+    top: -6px
+    right: 480px
+    transform: rotate(45deg)
+    border-top: 1px solid #e8e8e8
+    border-left: 1px solid #e8e8e8
 
-.drop__menu
-  list-style-type: none
+  &__menu
+    list-style-type: none
 
-.drop__link
-  font-size: 14px
-  line-height: 28px
-  font-weight: 400
-  letter-spacing: 0.025em
-  color: #646464
-  text-decoration: none
+  &__link
+    font-size: 14px
+    line-height: 28px
+    font-weight: 400
+    letter-spacing: 0.025em
+    color: #646464
+    text-decoration: none
 
-.drop__link:hover
-  color: $color-pink
+    &:hover
+      color: $color-pink
 
-.drop__flex
-  width: 235px
-  margin-right: 46px
+  &__flex
+    width: 235px
+    margin-right: 46px
 
-.drop__flex:last-of-type
-  margin-right: 0
+    &:last-of-type
+      margin-right: 0
 
-.drop__h3
-  font-size: 14px
-  font-weight: 700
-  text-transform: uppercase
-  color: #232323
-  border-bottom: 1px solid #e8e8e8
-  padding: 8px 0
+  &__h3
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+    color: #232323
+    border-bottom: 1px solid #e8e8e8
+    padding: 8px 0
+
+  &__browse
+    text-align: left
+    z-index: 3
+    padding: 10px !important
+    top: 35px
+
+    &__h3
+      margin-left: 10px
+
+    &__flex
+      width: 235px
+
+    &:before
+      content: ''
+      display: block
+      width: 10px
+      height: 10px
+      background-color: #ffffff
+      position: absolute
+      top: -6px
+      right: 200px
+      transform: rotate(45deg)
+      border-top: 1px solid #e8e8e8
+      border-left: 1px solid #e8e8e8
+
+  &__cart
+    text-align: left
+    z-index: 3
+    padding: 10px !important
+    top: 35px
+
+    &__flex
+      width: 262px
+
+    &:before
+      content: ''
+      display: block
+      width: 10px
+      height: 10px
+      background-color: #ffffff
+      position: absolute
+      top: -6px
+      right: 232px
+      transform: rotate(45deg)
+      border-top: 1px solid #e8e8e8
+      border-left: 1px solid #e8e8e8
+    &__items
+      display: flex
+      justify-content: space-between
+      &__info
+        display: flex
+        &__text
+          margin-left: 15px
+          a
+            text-decoration: none
+          h3
+            font-size: 12px
+            font-weight: 700
+            text-transform: uppercase
+            color: #222222
+            margin-bottom: 8px
+
+          p
+            font-size: 12px
+            font-weight: 400
+            text-transform: uppercase
+            color: #f16d7f
+            margin-top: 8px
+
+.close
+  width: 15px
+  height: 15px
+  margin-top: 37px
 
 .promo
   height: 614px
   background-color: #e8e8e8
 
-.promo__content
-  height: 100%
-  background-image: url("img/promo.jpg")
-  background-position: 0 -51px
+  &__content
+    height: 100%
+    background-image: url("img/promo.jpg")
+    background-position: 0 -51px
 
-.promo__text
-  font-size: 40px
-  font-weight: 900
-  color: #222
-  border-left: 12px solid $color-pink
-  padding-left: 12px
-  line-height: 30px
-  margin-top: 224px
-  float: left
+  &__text
+    font-size: 40px
+    font-weight: 900
+    color: #222
+    border-left: 12px solid $color-pink
+    padding-left: 12px
+    line-height: 30px
+    margin-top: 224px
+    float: left
 
 .offer1
   background-image: url("img/offer1.jpg")
@@ -194,17 +280,21 @@ body
   padding-bottom: 100px
   display: flex
   justify-content: space-between
+
   &__content
     div:first-child
       margin-bottom: 20px
+
     &__big
       width: 560px
       height: 542px
       background-color: #ccc
+
     &__mini
       width: 560px
       height: 261px
       background-color: #dadad2
+
   &__text
     background-color: #fff
     padding: 16px 20px
@@ -213,6 +303,7 @@ body
     margin-top: 26px
     font-weight: 900
     font-size: 18px
+
   &__text2
     font-size: 30px
     color: $color-pink
@@ -232,13 +323,17 @@ body
 
 .form__browse
   width: 87px
-  height: 36px
+  height: 37px
   object-fit: contain
   border: solid 1px #e6e6e6
   background-image: linear-gradient(to top, #f9f9f9, #f5f5f5)
   border-bottom-left-radius: 3px
   border-top-left-radius: 3px
   border-right-width: 0px
+  position: relative
+
+  &:hover .drop__browse
+    display: block
 
 .form__browse ul
   margin-left: 25px
