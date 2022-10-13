@@ -18,20 +18,82 @@
                     class="logo__bran-d">D</span>
             </a>
             <form action="#" class="form">
-                <details class="form__browse">
-                    <summary>Browse</summary>
-                    <ul>
-                        <li>list</li>
-                        <li>list</li>
-                        <li>list</li>
-                    </ul>
-                </details>
+                <button class="form__browse">
+                    Browse
+                    <div class="drop drop__browse">
+                        <div class="drop__browse__flex">
+                            <h3 class="drop__h3 drop__browse__h3">Women</h3>
+                            <ul class="drop__menu">
+                                <li><a href="#" class="drop__link">Dresses</a></li>
+                                <li><a href="#" class="drop__link">Tops</a></li>
+                                <li><a href="#" class="drop__link">Sweaters/Knits</a></li>
+                                <li><a href="#" class="drop__link">Jackets/Coats</a></li>
+                                <li><a href="#" class="drop__link">Blazers</a></li>
+                                <li><a href="#" class="drop__link">Denim</a></li>
+                                <li><a href="#" class="drop__link">Leggings/Pants</a></li>
+                                <li><a href="#" class="drop__link">Skirts/Shorts</a></li>
+                                <li><a href="#" class="drop__link">Accessories</a></li>
+                            </ul>
+                        </div>
+                        <div class="drop__browse__flex">
+                            <h3 class="drop__h3 drop__browse__h3">Men</h3>
+                            <ul class="drop__menu">
+                                <li><a href="#" class="drop__link">Dresses</a></li>
+                                <li><a href="#" class="drop__link">Tops</a></li>
+                                <li><a href="#" class="drop__link">Sweaters/Knits</a></li>
+                                <li><a href="#" class="drop__link">Jackets/Coats</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </button>
                 <input type="text">
                 <button class="form__search"><img src="img/search.svg" alt="search" width="18px" height="18px"></button>
             </form>
         </div>
         <div class="header__right">
-            <a href="#"><img class="cart" src="img/cart.svg" alt="cart"></a>
+            <div class="cart_menu">
+                <a href="#"><img class="cart" src="img/cart.svg" alt="cart"></a>
+                <div class="drop drop__cart">
+                    <div class="drop__browse__flex">
+                        <ul class="drop__menu">
+                            <li class="drop__cart__items">
+                                <div class="drop__cart__items__info">
+                                    <a href="product.html"><img src="img/cart__item1.jpg" alt="item"></a>
+                                    <div class="drop__cart__items__info__text">
+                                        <a href="product.html"><h3>Rebox Zane</h3></a>
+                                        <a href="product.html"><img src="img/star.png" alt="stars_cart"></a>
+                                        <a href="#"><p>1 x $250</p></a>
+                                    </div>
+                                </div>
+                                <a href="#"><img class="close" src="img/close.png" alt="close"></a>
+                            </li>
+                            <br>
+                            <li class="cart__line"></li>
+                            <br>
+                            <li class="drop__cart__items">
+                                <div class="drop__cart__items__info">
+                                    <a href="product.html"><img src="img/cart__item2.jpg" alt="item"></a>
+                                    <div class="drop__cart__items__info__text">
+                                        <a href="product.html"><h3>Rebox Zane</h3></a>
+                                        <a href="product.html"><img src="img/star.png" alt="stars_cart"></a>
+                                        <a href="#"><p>1 x $250</p></a>
+                                    </div>
+                                </div>
+                                <a href="#"><img class="close" src="img/close.png" alt="close"></a>
+                            </li>
+                            <br>
+                            <li class="cart__line"></li>
+                            <br>
+                        </ul>
+                    </div>
+                    <div class="drop__cart__price">
+                        <h3>Total</h3>
+                        <h3>$500.00</h3>
+                    </div>
+                    <button class="drop__cart__button1" >Checkout</button>
+                    <button class="drop__cart__button2" >Go to cart</button>
+                </div>
+            </div>
             <details class="button Account">
                 <summary>My Account</summary>
                 <ul>
@@ -349,11 +411,11 @@
                 <p>Register with us for future convenience</p>
                 <form>
                     <div class="check">
-                        <input class="checkout_input" type="radio" name="reg" id="checkout">
+                        <input class="checkout_input" type="radio" name="reg">
                         <span class="input_text">checkout as guest</span>
                     </div>
                     <div class="reg">
-                        <input class="checkout_input" type="radio" name="reg" id="register">
+                        <input class="checkout_input" type="radio" name="reg">
                         <span class="input_text">register</span>
                     </div>
                     <h3>register and save time!</h3>
@@ -393,11 +455,11 @@
                 <p>Register with us for future convenience</p>
                 <form>
                     <div class="check">
-                        <input class="checkout_input" type="radio" name="reg" id="checkout">
+                        <input class="checkout_input" type="radio" name="reg">
                         <span class="input_text">checkout as guest</span>
                     </div>
                     <div class="reg">
-                        <input class="checkout_input" type="radio" name="reg" id="register">
+                        <input class="checkout_input" type="radio" name="reg">
                         <span class="input_text">register</span>
                     </div>
                     <h3>register and save time!</h3>
@@ -437,11 +499,11 @@
                 <p>Register with us for future convenience</p>
                 <form>
                     <div class="check">
-                        <input class="checkout_input" type="radio" name="reg" id="checkout">
+                        <input class="checkout_input" type="radio" name="reg">
                         <span class="input_text">checkout as guest</span>
                     </div>
                     <div class="reg">
-                        <input class="checkout_input" type="radio" name="reg" id="register">
+                        <input class="checkout_input" type="radio" name="reg">
                         <span class="input_text">register</span>
                     </div>
                     <h3>register and save time!</h3>
@@ -481,11 +543,11 @@
                 <p>Register with us for future convenience</p>
                 <form>
                     <div class="check">
-                        <input class="checkout_input" type="radio" name="reg" id="checkout">
+                        <input class="checkout_input" type="radio" name="reg">
                         <span class="input_text">checkout as guest</span>
                     </div>
                     <div class="reg">
-                        <input class="checkout_input" type="radio" name="reg" id="register">
+                        <input class="checkout_input" type="radio" name="reg">
                         <span class="input_text">register</span>
                     </div>
                     <h3>register and save time!</h3>
@@ -525,11 +587,11 @@
                 <p>Register with us for future convenience</p>
                 <form>
                     <div class="check">
-                        <input class="checkout_input" type="radio" name="reg" id="checkout">
+                        <input class="checkout_input" type="radio" name="reg">
                         <span class="input_text">checkout as guest</span>
                     </div>
                     <div class="reg">
-                        <input class="checkout_input" type="radio" name="reg" id="register">
+                        <input class="checkout_input" type="radio" name="reg">
                         <span class="input_text">register</span>
                     </div>
                     <h3>register and save time!</h3>
