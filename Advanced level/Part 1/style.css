@@ -899,6 +899,11 @@ img[alt="cur"] {
   object-fit: contain;
   background-color: #e8e8e8; }
 
+.prod_price {
+  font-size: 24px !important;
+  font-weight: bold !important;
+  color: #f16d7f !important;
+  margin: 37px 306px 43px 282px !important; }
 .prod_info {
   width: 1141px;
   height: 730px;
@@ -910,6 +915,16 @@ img[alt="cur"] {
   left: 219px; }
   .prod_info_block {
     display: flex; }
+    .prod_info_block h4 {
+      font-size: 14px;
+      font-weight: bold;
+      color: #b9b9b9; }
+      .prod_info_block h4 span {
+        color: #2f2f2f; }
+      .prod_info_block h4:first-child {
+        margin-left: 404px; }
+      .prod_info_block h4:nth-child(2) {
+        margin-left: 44px; }
   .prod_info_line {
     border: solid 1px #eaeaea;
     width: 147px;
@@ -961,10 +976,61 @@ img[alt="cur"] {
       margin-top: 13px; }
   .prod_slider__right {
     left: 1553px; }
+.prod_line_long {
+  width: 642px;
+  height: 1px;
+  object-fit: contain;
+  background-color: #eaeaea;
+  margin-left: 250px; }
+.prod_characteristic {
+  display: flex;
+  width: 534px;
+  flex-wrap: wrap;
+  margin-left: 303px;
+  margin-top: 63px; }
+  .prod_characteristic h4 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #2f2f2f; }
+
+.color_menu, .size_menu, .quanity_input {
+  width: 144px;
+  height: 35px;
+  margin: 16px 0 0;
+  object-fit: contain;
+  border: solid 1px #eaeaea;
+  background-color: #fff; }
+
+.color, .size {
+  margin-right: 47px; }
 
 .recomend {
-  height: 1289px;
   position: relative;
   margin-top: 763px; }
+  .recomend h1 {
+    font-size: 24px;
+    font-weight: 900;
+    text-align: center;
+    color: #4d4d4d;
+    text-transform: uppercase;
+    margin-bottom: 72px; }
+  .recomend_items {
+    display: flex; }
+
+.to_cart {
+  width: 537px;
+  height: 55px;
+  object-fit: contain;
+  border: solid 1px #ef5b70;
+  background-color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ef5b70;
+  margin-top: 28px; }
+
+img[alt="prod_item1"], img[alt="prod_item2"], img[alt="prod_item3"] {
+  width: auto;
+  background-color: #f7f7f7;
+  padding: 0px 86px 0px 82px; }
 
 /*# sourceMappingURL=style.css.map */
