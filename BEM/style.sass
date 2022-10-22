@@ -14,9 +14,25 @@
   &__logo
     margin-top: 35px
     margin-left: 70px
+
 .menu
   display: flex
   list-style-type: none
+  justify-content: center
+
+  &__list
+    width: 120px
+    height: 40px
+    line-height: 40px
+    text-align: center
+    border: 1px solid #000
+
+  &__link
+    text-decoration: none
+    font-size: 24px
+
+    &_ active
+      color: black
 
 .logo
   width: 35px
@@ -35,11 +51,22 @@
   height: 400px
   border: 1px solid #000
 
-  &__logo
-    margin-left: 100px
+  &__img
+    height: 300px
+    background-color: hotpink
+  &__h3
+    font-size: 30px
+    text-align: center
+  &__price
+    color: #1740a2
+    font-size: 24px
+    text-align: center
+    &_sale
+      color: red
+
 
 .footer
-  height: 120px
+  min-height: 120px
   background-color: #ccc
 
   &__logo
