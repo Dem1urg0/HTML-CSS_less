@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Checkout</title>
+    <title>Products</title>
     <script src="https://kit.fontawesome.com/6583254041.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -90,8 +90,8 @@
                         <h3>Total</h3>
                         <h3>$500.00</h3>
                     </div>
-                    <button class="drop__cart__button1" >Checkout</button>
-                    <button class="drop__cart__button2" >Go to cart</button>
+                    <button class="drop__cart__button1">Checkout</button>
+                    <button class="drop__cart__button2">Go to cart</button>
                 </div>
             </div>
             <details class="button Account">
@@ -394,6 +394,86 @@
         </ul>
     </div>
 </nav>
+<section class="products">
+    <div class="products__detail">
+        <p>product details</p>
+        <p>unite Price</p>
+        <p>Quantity</p>
+        <p>shipping</p>
+        <p>Subtotal</p>
+        <p>ACTION</p>
+    </div>
+    <div class="products__item">
+        <img class="products__item__img" src="img/prod1.png" alt="prod1">
+        <div class="products__item__name">
+            <h2>Mango People T-shirt</h2>
+            <p>Color: Red <br>
+                Size: Xll </p>
+        </div>
+        <p class="products__item__uprice">$150</p>
+        <input class="products__item__input">
+        <p class="products__item__shipping"></p>
+        <p class="products__item__sprice">$300</p>
+        <img class="products__item__actionimg" src="img/close.png" alt="close">
+    </div>
+    <div class="products__item">
+        <img class="products__item__img" src="img/prod2.png" alt="prod2">
+        <div class="products__item__name">
+            <h2>Mango People T-shirt</h2>
+            <p>Color: Red <br>
+                Size: Xll </p>
+        </div>
+        <p class="products__item__uprice">$150</p>
+        <input class="products__item__input">
+        <p class="products__item__shipping"></p>
+        <p class="products__item__sprice">$300</p>
+        <img class="products__item__actionimg" src="img/close.png" alt="close">
+    </div>
+    <div class="products__item">
+        <img class="products__item__img" src="img/prod3.png" alt="prod3">
+        <div class="products__item__name">
+            <h2>Mango People T-shirt</h2>
+            <p>Color: Red <br>
+                Size: Xll </p>
+        </div>
+        <p class="products__item__uprice">$150</p>
+        <input class="products__item__input">
+        <p class="products__item__shipping"></p>
+        <p class="products__item__sprice">$300</p>
+        <img class="products__item__actionimg" src="img/close.png" alt="close">
+    </div>
+    <div class="products__buttons">
+        <button>CLEAR SHOPPING CART</button>
+        <button>CONTINUE SHOPPING</button>
+    </div>
+</section>
+<section class="info">
+    <div class="shipping-adress">
+        <h2>SHIPPING ADRESS</h2>
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <button>GET A QUOTE</button>
+    </div>
+    <div class="discount">
+        <h2>COUPON DISCOUNT</h2>
+        <p>Enter your coupon code if you have one</p>
+        <input type="text">
+        <button>APPLY COUPON</button>
+    </div>
+    <div class="total-price">
+        <div class="total-price__sub">
+            <p>SUB TOTAL</p>
+            <p>$900</p>
+        </div>
+        <div class="total-price__grand">
+            <h2>GRAND TOTAL</h2>
+            <p>$900</p>
+        </div>
+        <div class="total__price__line"></div>
+        <button>proceed to checkout</button>
+    </div>
+</section>
 <div class="checkout_content">
     <nav>
         <div class="second_nav container">
@@ -402,272 +482,6 @@
         </div>
     </nav>
 </div>
-<section class="arrivals__info container">
-    <div class="order_info adress">
-        <div class="a01"><h2>01. Shipping Adress</h2></div>
-        <div class="adress_content">
-            <div class="register">
-                <h3>Check as a guest or register</h3>
-                <p>Register with us for future convenience</p>
-                <form>
-                    <div class="check">
-                        <input class="checkout_input" type="radio" name="reg">
-                        <span class="input_text">checkout as guest</span>
-                    </div>
-                    <div class="reg">
-                        <input class="checkout_input" type="radio" name="reg">
-                        <span class="input_text">register</span>
-                    </div>
-                    <h3>register and save time!</h3>
-                    <p class="reg_text_reg">Register with us for future convenience</p>
-                    <div class="reg_text">
-                        <i class="fa-solid fa-angles-right"></i>
-                        <p>Fast and easy checkout</p>
-                    </div>
-                    <div class="reg_text">
-                        <i class="fa-solid fa-angles-right"></i>
-                        <p>Easy access to your order history and status</p>
-                    </div>
-                    <button class="continue">Continue</button>
-                </form>
-            </div>
-            <div class="log_in">
-                <h2>Already registed?</h2>
-                <p>Please log in below</p>
-                <h4>EMAIL ADDRESS <span>*</span></h4>
-                <form>
-                    <input type="text" class="email">
-                    <h4>PASSWORD <span>*</span></h4>
-                    <input type="text" class="pass">
-                    <p class="required">* Required Fileds</p>
-                    <button class="log_in_button" href="#">LOG IN</button>
-                    <a class="forgot" href="#">Forgot Password ?</a>
-                </form>
-            </div>
-        </div>
-        <div class="line"></div>
-    </div>
-    <div class="order_info">
-        <div class="a01"><h2>02. BILLING INFORMATION</h2></div>
-        <div class="adress_content">
-            <div class="register">
-                <h3>Check as a guest or register</h3>
-                <p>Register with us for future convenience</p>
-                <form>
-                    <div class="check">
-                        <input class="checkout_input" type="radio" name="reg">
-                        <span class="input_text">checkout as guest</span>
-                    </div>
-                    <div class="reg">
-                        <input class="checkout_input" type="radio" name="reg">
-                        <span class="input_text">register</span>
-                    </div>
-                    <h3>register and save time!</h3>
-                    <p class="reg_text_reg">Register with us for future convenience</p>
-                    <div class="reg_text">
-                        <i class="fa-solid fa-angles-right"></i>
-                        <p>Fast and easy checkout</p>
-                    </div>
-                    <div class="reg_text">
-                        <i class="fa-solid fa-angles-right"></i>
-                        <p>Easy access to your order history and status</p>
-                    </div>
-                    <button class="continue">Continue</button>
-                </form>
-            </div>
-            <div class="log_in">
-                <h2>Already registed?</h2>
-                <p>Please log in below</p>
-                <h4>EMAIL ADDRESS <span>*</span></h4>
-                <form>
-                    <input type="text" class="email">
-                    <h4>PASSWORD <span>*</span></h4>
-                    <input type="text" class="pass">
-                    <p class="required">* Required Fileds</p>
-                    <button class="log_in_button" href="#">LOG IN</button>
-                    <a class="forgot" href="#">Forgot Password ?</a>
-                </form>
-            </div>
-        </div>
-        <div class="line"></div>
-    </div>
-    <div class="order_info">
-        <div class="a01"><h2>03. SHIPPING INFORMATION</h2></div>
-        <div class="adress_content">
-            <div class="register">
-                <h3>Check as a guest or register</h3>
-                <p>Register with us for future convenience</p>
-                <form>
-                    <div class="check">
-                        <input class="checkout_input" type="radio" name="reg">
-                        <span class="input_text">checkout as guest</span>
-                    </div>
-                    <div class="reg">
-                        <input class="checkout_input" type="radio" name="reg">
-                        <span class="input_text">register</span>
-                    </div>
-                    <h3>register and save time!</h3>
-                    <p class="reg_text_reg">Register with us for future convenience</p>
-                    <div class="reg_text">
-                        <i class="fa-solid fa-angles-right"></i>
-                        <p>Fast and easy checkout</p>
-                    </div>
-                    <div class="reg_text">
-                        <i class="fa-solid fa-angles-right"></i>
-                        <p>Easy access to your order history and status</p>
-                    </div>
-                    <button class="continue">Continue</button>
-                </form>
-            </div>
-            <div class="log_in">
-                <h2>Already registed?</h2>
-                <p>Please log in below</p>
-                <h4>EMAIL ADDRESS <span>*</span></h4>
-                <form>
-                    <input type="text" class="email">
-                    <h4>PASSWORD <span>*</span></h4>
-                    <input type="text" class="pass">
-                    <p class="required">* Required Fileds</p>
-                    <button class="log_in_button" href="#">LOG IN</button>
-                    <a class="forgot" href="#">Forgot Password ?</a>
-                </form>
-            </div>
-        </div>
-        <div class="line"></div>
-    </div>
-    <div class="order_info">
-        <div class="a01"><h2>04. SHIPPING METHOD</h2></div>
-        <div class="adress_content">
-            <div class="register">
-                <h3>Check as a guest or register</h3>
-                <p>Register with us for future convenience</p>
-                <form>
-                    <div class="check">
-                        <input class="checkout_input" type="radio" name="reg">
-                        <span class="input_text">checkout as guest</span>
-                    </div>
-                    <div class="reg">
-                        <input class="checkout_input" type="radio" name="reg">
-                        <span class="input_text">register</span>
-                    </div>
-                    <h3>register and save time!</h3>
-                    <p class="reg_text_reg">Register with us for future convenience</p>
-                    <div class="reg_text">
-                        <i class="fa-solid fa-angles-right"></i>
-                        <p>Fast and easy checkout</p>
-                    </div>
-                    <div class="reg_text">
-                        <i class="fa-solid fa-angles-right"></i>
-                        <p>Easy access to your order history and status</p>
-                    </div>
-                    <button class="continue">Continue</button>
-                </form>
-            </div>
-            <div class="log_in">
-                <h2>Already registed?</h2>
-                <p>Please log in below</p>
-                <h4>EMAIL ADDRESS <span>*</span></h4>
-                <form>
-                    <input type="text" class="email">
-                    <h4>PASSWORD <span>*</span></h4>
-                    <input type="text" class="pass">
-                    <p class="required">* Required Fileds</p>
-                    <button class="log_in_button" href="#">LOG IN</button>
-                    <a class="forgot" href="#">Forgot Password ?</a>
-                </form>
-            </div>
-        </div>
-        <div class="line"></div>
-    </div>
-    <div class="order_info">
-        <div class="a01"><h2>05. PAYMENT METHOD</h2></div>
-        <div class="adress_content">
-            <div class="register">
-                <h3>Check as a guest or register</h3>
-                <p>Register with us for future convenience</p>
-                <form>
-                    <div class="check">
-                        <input class="checkout_input" type="radio" name="reg">
-                        <span class="input_text">checkout as guest</span>
-                    </div>
-                    <div class="reg">
-                        <input class="checkout_input" type="radio" name="reg">
-                        <span class="input_text">register</span>
-                    </div>
-                    <h3>register and save time!</h3>
-                    <p class="reg_text_reg">Register with us for future convenience</p>
-                    <div class="reg_text">
-                        <i class="fa-solid fa-angles-right"></i>
-                        <p>Fast and easy checkout</p>
-                    </div>
-                    <div class="reg_text">
-                        <i class="fa-solid fa-angles-right"></i>
-                        <p>Easy access to your order history and status</p>
-                    </div>
-                    <button class="continue">Continue</button>
-                </form>
-            </div>
-            <div class="log_in">
-                <h2>Already registed?</h2>
-                <p>Please log in below</p>
-                <h4>EMAIL ADDRESS <span>*</span></h4>
-                <form>
-                    <input type="text" class="email">
-                    <h4>PASSWORD <span>*</span></h4>
-                    <input type="text" class="pass">
-                    <p class="required">* Required Fileds</p>
-                    <button class="log_in_button" href="#">LOG IN</button>
-                    <a class="forgot" href="#">Forgot Password ?</a>
-                </form>
-            </div>
-        </div>
-        <div class="line"></div>
-    </div>
-    <div class="order_info">
-        <div class="a01"><h2>06. ORDER REVIEW</h2></div>
-        <div class="adress_content">
-            <div class="register">
-                <h3>Check as a guest or register</h3>
-                <p>Register with us for future convenience</p>
-                <form>
-                    <div class="check">
-                        <input class="checkout_input" type="radio" name="reg" id="checkout">
-                        <span class="input_text">checkout as guest</span>
-                    </div>
-                    <div class="reg">
-                        <input class="checkout_input" type="radio" name="reg" id="register">
-                        <span class="input_text">register</span>
-                    </div>
-                    <h3>register and save time!</h3>
-                    <p class="reg_text_reg">Register with us for future convenience</p>
-                    <div class="reg_text">
-                        <i class="fa-solid fa-angles-right"></i>
-                        <p>Fast and easy checkout</p>
-                    </div>
-                    <div class="reg_text">
-                        <i class="fa-solid fa-angles-right"></i>
-                        <p>Easy access to your order history and status</p>
-                    </div>
-                    <button class="continue">Continue</button>
-                </form>
-            </div>
-            <div class="log_in">
-                <h2>Already registed?</h2>
-                <p>Please log in below</p>
-                <h4>EMAIL ADDRESS <span>*</span></h4>
-                <form>
-                    <input type="text" class="email">
-                    <h4>PASSWORD <span>*</span></h4>
-                    <input type="text" class="pass">
-                    <p class="required">* Required Fileds</p>
-                    <button class="log_in_button" href="#">LOG IN</button>
-                    <a class="forgot" href="#">Forgot Password ?</a>
-                </form>
-            </div>
-        </div>
-        <div class="line"></div>
-    </div>
-</section>
 <div class="subscribe__block">
     <div class="subscribe__content container">
         <div class="quote">
