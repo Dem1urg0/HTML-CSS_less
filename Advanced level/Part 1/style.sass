@@ -1026,7 +1026,6 @@ img[alt="cur"]
   background-color: #e8e8e8
 
 .prod
-
   &_price
     font-size: 24px !important
     font-weight: bold !important
@@ -1178,7 +1177,107 @@ img[alt="cur"]
   color: #ef5b70
   margin-top: 28px
 
-img[alt="prod_item1"],img[alt="prod_item2"],img[alt="prod_item3"]
+img[alt="prod_item1"], img[alt="prod_item2"], img[alt="prod_item3"]
   width: auto
   background-color: #f7f7f7
   padding: 0px 86px 0px 82px
+
+.products
+  .line
+    margin: 20px 0px
+
+  &__detail
+    display: flex
+    margin-top: 90px
+
+    p
+      font-family: Lato
+      font-size: 14px
+      color: #222
+      text-transform: uppercase
+      font-weight: bold
+
+      &:first-child
+        margin-right: 380px
+
+      &:nth-child(2)
+        margin-right: 80px
+
+      &:nth-child(3)
+        margin-right: 70px
+
+      &:nth-child(4)
+        margin-right: 90px
+
+      &:nth-child(5)
+        margin-right: 50px
+
+  &__item
+    margin-top: 3px
+    display: flex
+
+    &__name
+      margin-left: 21px
+
+      h2
+        font-size: 13px
+        color: #222
+        text-transform: uppercase
+        margin-top: 12px
+        margin-bottom: 38px
+
+      p
+        color: #575757
+        font-size: 13px
+
+    &__uprice
+      font-size: 13px
+      color: #656565
+      font-weight: bold
+      margin-left: 255px
+      margin-top: 50px
+
+    &__input
+      width: 54px
+      height: 30px
+      border: solid 1px #eaeaea
+      margin-top: 41px
+      margin-left: 128px
+      text-align: center
+
+    &__shipping
+      font-size: 13px
+      color: #656565
+      font-weight: bold
+      margin-left: 98px
+      margin-top: 50px
+
+    &__sprice
+      font-size: 13px
+      color: #656565
+      font-weight: bold
+      margin-left: 116px
+      margin-top: 50px
+
+    a
+      width: 15px
+      height: 15px
+
+      img[alt="close"]
+
+        margin-left: 87px
+        margin-top: 49px
+
+  &__buttons
+    display: flex
+    justify-content: space-between
+
+    button
+      width: 235px
+      height: 50px
+      border: solid 1px #eaeaea
+      background-color: #fff
+      font-size: 14px
+      font-weight: bold
+      color: #4a4a4a
+      font-family: Lato
