@@ -295,6 +295,8 @@ body {
     margin-top: 26px;
     font-weight: 900;
     font-size: 18px; }
+  .offer__text1 {
+    color: #222222; }
   .offer__text2 {
     font-size: 30px;
     color: #f16d7f; }
@@ -628,7 +630,8 @@ img[alt="cur"] {
     margin-left: -3px;
     font-size: 14px;
     letter-spacing: 0.35px;
-    color: #fff; }
+    color: #fff;
+    font-family: "Lato", sans-serif; }
     .subscribe__button:hover {
       box-shadow: inset 0px 1px 8px 0 rgba(0, 0, 0, 0.16); }
   .subscribe__input {
@@ -1111,5 +1114,109 @@ img[alt="prod_item1"], img[alt="prod_item2"], img[alt="prod_item3"] {
     font-weight: bold;
     color: #4a4a4a;
     font-family: Lato; }
+
+.info {
+  margin-top: 63px;
+  display: flex;
+  margin-bottom: 80px; }
+  .info h2 {
+    font-size: 16px;
+    color: #222;
+    font-weight: bold;
+    text-transform: uppercase; }
+  .info__shipping-adress {
+    display: inline-grid; }
+    .info__shipping-adress input, .info__shipping-adress select {
+      margin-top: 20px;
+      border: solid 1px #eaeaea;
+      width: 355px;
+      height: 45px;
+      box-sizing: border-box;
+      font-size: 13px;
+      font-weight: 300;
+      color: #b1b1b1;
+      background-color: white;
+      padding-left: 18px; }
+    .info__shipping-adress select {
+      margin-top: 22px; }
+    .info__shipping-adress button {
+      width: 100px;
+      height: 35px;
+      font-size: 11px;
+      text-transform: uppercase;
+      font-weight: bold;
+      background-color: white;
+      border: solid 1px #eaeaea;
+      font-family: lato;
+      margin-top: 22px; }
+  .info__discount {
+    margin-left: 35px; }
+    .info__discount p {
+      font-size: 14px;
+      color: #000;
+      margin-top: 28px; }
+    .info__discount input {
+      margin-top: 24px;
+      border: solid 1px #eaeaea;
+      width: 355px;
+      height: 45px;
+      box-sizing: border-box;
+      font-size: 13px;
+      font-weight: 300;
+      color: #b1b1b1;
+      background-color: white;
+      padding-left: 18px; }
+    .info__discount button {
+      margin-top: 25px;
+      display: block;
+      width: 100px;
+      height: 35px;
+      font-size: 11px;
+      text-transform: uppercase;
+      font-weight: bold;
+      background-color: white;
+      border: solid 1px #eaeaea;
+      font-family: lato; }
+  .info__total-price {
+    background-color: #f5f5f5;
+    width: 360px;
+    height: 214px;
+    margin-left: 36px;
+    box-sizing: border-box; }
+    .info__total-price__sub {
+      font-size: 11px;
+      color: #4a4a4a;
+      margin-top: 40px;
+      margin-left: 218px;
+      display: flex; }
+      .info__total-price__sub p:first-child {
+        margin-right: 20px; }
+    .info__total-price__grand {
+      font-size: 16px;
+      display: flex;
+      margin-left: 153px;
+      margin-top: 14px; }
+      .info__total-price__grand p {
+        font-weight: bold; }
+        .info__total-price__grand p:nth-child(2) {
+          margin-left: 20px;
+          color: #f16d7f; }
+    .info__total-price__line {
+      width: 275px;
+      height: 1px;
+      object-fit: contain;
+      background-color: #e2e2e2;
+      margin: 22px 42px 17px; }
+    .info__total-price button {
+      background-color: #f16d7f;
+      border: none;
+      width: 273px;
+      height: 50px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+      text-transform: uppercase;
+      font-family: "Lato";
+      margin-left: 44px; }
 
 /*# sourceMappingURL=style.css.map */
