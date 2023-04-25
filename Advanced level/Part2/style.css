@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.container {
+  padding-left: 16px;
+  padding-right: 16px;
+  max-width: 1238px;
+  margin: 0 auto; }
+
+.top {
+  background-color: #18103B;
+  min-height: 876px;
+  display: flex;
+  flex-direction: column; }
+  .top__text {
+    margin-top: 32px;
+    margin-bottom: 64px;
+    color: white;
+    text-align: center; }
+  .top__content {
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-start; }
+  .top__h4 {
+    margin-top: 32px;
+    margin-bottom: 32px; }
+
+.header {
+  min-height: 80px; }
+  .header a {
+    text-decoration: none; }
+  .header h2 {
+    color: white; }
+  .header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px; }
+
+.menu {
+  display: none; }
+
+.unity__item {
+  height: 200px;
+  background-color: darkgray;
+  margin-bottom: 16px; }
+.unity-flex {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  height: 464px; }
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding-left: 32px;
+    padding-right: 32px; }
+
+  .header-flex {
+    justify-content: flex-start; }
+
+  .menu-mini {
+    display: none; }
+
+  .menu {
+    display: flex;
+    list-style-type: none; }
+    .menu__link {
+      color: #eee;
+      padding: 16px;
+      text-decoration: none; }
+
+  .top__text {
+    margin-left: 32px;
+    width: 50%;
+    text-align: left; }
+  .top__content {
+    margin: 0;
+    align-items: center; }
+
+  .unity-flex {
+    padding-left: 64px;
+    padding-right: 64px; }
+  .unity__item {
+    height: 320px;
+    margin-bottom: 32px; } }
+@media screen and (min-width: 1024px) {
+  .top {
+    height: 640px; }
+
+  .unity-flex {
+    display: flex;
+    height: 400px; }
+  .unity__item:nth-child(3) {
+    margin-bottom: 0; }
+  .unity__item_big {
+    height: 400px;
+    flex-grow: 1;
+    margin-right: 32px;
+    margin-bottom: 0; }
+  .unity__item_mini {
+    height: 184px;
+    width: 355px; } }
+@media screen and (min-width: 1366px) {
+  .top {
+    height: 672px; }
+
+  .unity__item_mini {
+    width: 370px; } }
+
+/*# sourceMappingURL=style.css.map */
