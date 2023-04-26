@@ -52,7 +52,7 @@
         </div>
         <div class="header__right">
             <div class="cart_menu">
-                <a href="#"><img class="cart" src="img/cart.svg" alt="cart"></a>
+                <a href="Shopping%20Cart.html"><img class="cart" src="img/cart.svg" alt="cart"></a>
                 <div class="drop drop__cart">
                     <div class="drop__browse__flex">
                         <ul class="drop__menu">
@@ -90,8 +90,12 @@
                         <h3>Total</h3>
                         <h3>$500.00</h3>
                     </div>
-                    <button class="drop__cart__button1">Checkout</button>
-                    <button class="drop__cart__button2">Go to cart</button>
+                    <a href="Checkout.html">
+                        <button class="drop__cart__button1">Checkout</button>
+                    </a>
+                    <a href="Shopping%20Cart.html">
+                        <button class="drop__cart__button2">Go to cart</button>
+                    </a>
                 </div>
             </div>
             <details class="button Account">
@@ -422,33 +426,29 @@
         <h2 class="prod_price">$561</h2>
         <div class="prod_line_long"></div>
         <form class="prod_characteristic">
-            <div class="color">
+            <div class="prod_characteristic_color">
                 <h4>CHOOSE COLOR</h4>
-                <details class="color_menu">
-                    <summary>Color</summary>
-                    <ul>
-                        <li>Red</li>
-                        <li>Pink</li>
-                    </ul>
-                </details>
+                <select class="prod_characteristic_color_menu">
+                    <option value="" disabled selected>Color</option>
+                    <option class="Red">Red</option>
+                    <option>Pink</option>
+                </select>
             </div>
-            <div class="size">
+            <div class="prod_characteristic_size">
                 <h4>CHOOSE SIZE</h4>
-                <details class="size_menu">
-                    <summary>Size</summary>
-                    <ul>
-                        <li>XXL</li>
-                        <li>XL</li>
-                        <li>L</li>
-                        <li>M</li>
-                        <li>S</li>
-                        <li>XS</li>
-                    </ul>
-                </details>
+                <select class="prod_characteristic_size_menu">
+                    <option value="" disabled selected>Size</option>
+                    <option>XXL</option>
+                    <option>XL</option>
+                    <option>L</option>
+                    <option>M</option>
+                    <option>S</option>
+                    <option>XS</option>
+                </select>
             </div>
-            <div class="quanity">
+            <div class="prod_characteristic_quanity">
                 <h4>QUANTITY</h4>
-                <input class="quanity_input" type="text">
+                <input class="prod_characteristic_quanity_input" type="text">
             </div>
             <button class="to_cart"><img src="">Add to Cart</button>
         </form>
