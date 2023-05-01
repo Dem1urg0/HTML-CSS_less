@@ -1458,115 +1458,242 @@ img[alt="prod_item1"], img[alt="prod_item2"], img[alt="prod_item3"]
           color: #6f6e6e
 
 .products
-  &__filter
-    &__types
-      &__trending
-        h2
-          font-size: 14px
-          color: #6f6e6e
-          font-weight: bold
+  display: flex
+  margin-top: 59px
 
-        p
-          font-size: 14px
-          line-height: 1.86
+  &__container
+    margin-left: 49px
 
-          a
-            text-decoration: none
+    &__filter
+      &__types
+        display: flex
+
+        &__trending
+          h2
+            font-size: 14px
             color: #6f6e6e
+            font-weight: bold
 
-      &__size
-        h2
+          p
+            font-size: 14px
+            line-height: 1.86
+            color: #6f6e6e
+            margin-top: 25px
+
+            a
+              text-decoration: none
+              color: #6f6e6e
+
+        &__size
+          margin-left: 114px
+
+          &__inputs
+            display: flex
+            margin-top: 24px
+            width: 237px
+            flex-wrap: wrap
+            justify-content: flex-start
+
+
+          h2
+            font-size: 14px
+            color: #6f6e6e
+            font-weight: bold
+
+          p
+            font-size: 14px
+            color: #6f6e6e
+            margin-left: 9px
+
+            &:nth-of-type(n+5)
+              margin-top: 13px
+
+          input
+            &:nth-of-type(n+2)
+              margin-left: 13px
+            &:nth-of-type(3), &:nth-of-type(7), &:nth-of-type(6)
+              margin-left: 31px
+            &:nth-of-type(4)
+              margin-left: 33px
+            &:nth-of-type(5)
+              margin-left: 0
+
+            &:nth-of-type(n+5)
+              margin-top: 13px
+
+
+        &__price
+          margin-left: 57px
+          h2
+            font-size: 14px
+            color: #6f6e6e
+            font-weight: bold
+
+          p
+            font-size: 14px
+            color: #6f6e6e
+          input
+            margin-top: 18px
+          &__numbers
+            display: flex
+            justify-content: space-between
+      &__sort
+        width: 846px
+        height: 50px
+        background-color: #f3f3f3
+        display: flex
+        margin-top: 42px
+
+        p, select
           font-size: 14px
           color: #6f6e6e
-          font-weight: bold
+          background-color: #ffffff
+          border: solid 1px #eaeaea
+          box-sizing: border-box
+          height: 30px
+          margin-top: 10px
 
         p
-          font-size: 14px
-          color: #6f6e6e
+          &:first-of-type
+            width: 66px
+            padding-left: 10px
+            padding-top: 5px
+            margin-left: 6px
 
-      &__price
-        h2
-          font-size: 14px
-          color: #6f6e6e
-          font-weight: bold
+          &:nth-of-type(2)
+            width: 55px
+            padding-left: 12px
+            padding-top: 5px
+            margin-left: 12px
 
-        p
-          font-size: 14px
-          color: #6f6e6e
+        select
+          padding-left: 11px
 
-    &__sort
-      width: 846px
-      height: 50px
-      background-color: #f3f3f3
+          &:first-of-type
+            width: 86px
+
+          &:nth-of-type(2)
+            width: 63px
+
+    &__content
+      margin-top: 48px
       display: flex
-
-      p, select
-        font-size: 14px
-        color: #6f6e6e
-        background-color: #ffffff
-        border: solid 1px #eaeaea
-        box-sizing: border-box
-        height: 30px
-        margin-top: 10px
-
-      p
-        &:first-of-type
-          width: 66px
-          padding-left: 10px
-          padding-top: 5px
-          margin-left: 6px
-        &:nth-of-type(2)
-          width: 55px
-          padding-left: 12px
-          padding-top: 5px
-          margin-left: 12px
-
-      select
-        padding-left: 11px
-        &:first-of-type
-          width: 86px
-        &:nth-of-type(2)
-          width: 63px
-
-  &__footer
-    display: flex
-    justify-content: space-between
-    &__page
-      width: 265px
-      height: 44px
-      border: solid 1px #ebebeb
-      background-color: #fff
+      flex-wrap: wrap
+      &__item
+        margin-left: 30px
+        margin-bottom: 36px
+        &:nth-of-type(4)
+          margin-left: 0
+        &:nth-of-type(5)
+          margin-left: 30px
+    &__footer
       display: flex
-      color: #c4c4c4
-      p
-        margin-left: 16px
-        margin-top: 12px
-      a
-        text-decoration: none
+      justify-content: space-between
+      margin-top: 7px
+      margin-bottom: 110px
+
+      &__page
+        width: 265px
+        height: 44px
+        border: solid 1px #ebebeb
+        background-color: #fff
+        display: flex
         color: #c4c4c4
-        &:hover
-          color: $color-pink
-      span
-        color: #ee6b7d
-      img
-        height: 13px
-        width: 8px
-        margin-left: 15px
-        margin-top: 16px
-        &:nth-of-type(2)
-          margin-top: 15px
-    &__view
-      padding-left: 43px
-      padding-top: 10px
-      box-sizing: border-box
-      display: block
-      width: 150px
-      height: 44px
-      border: solid 1px #ef5b70
-      background-color: #fff
-      text-decoration: none
-      color: #ef5b70
-      border-radius: 3px
+
+        p
+          margin-left: 16px
+          margin-top: 12px
+
+        a
+          text-decoration: none
+          color: #c4c4c4
+
+          &:hover
+            color: $color-pink
+
+        span
+          color: #ee6b7d
+
+        img
+          height: 13px
+          width: 8px
+          margin-left: 15px
+          margin-top: 16px
+
+          &:nth-of-type(2)
+            margin-top: 15px
+
+      &__view
+        padding-left: 43px
+        padding-top: 10px
+        box-sizing: border-box
+        display: block
+        width: 150px
+        height: 44px
+        border: solid 1px #ef5b70
+        background-color: #fff
+        text-decoration: none
+        color: #ef5b70
+        border-radius: 3px
+
+.goods
+  &__offer
+    margin: 0 auto
+    display: flex
+    width: 1600px
+    height: 341px
+    background-color: #222224
+
+    &__text
+      color: #fbfbfb
+
+      h1
+        color: #fbfbfb
+        text-align: center
+
+      p
+        width: 310px
+        height: 37px
+        font-size: 14px
+        font-weight: 300
+        line-height: 1.71
+        letter-spacing: 0.35px
+        margin-top: 17px
+
+    figure
+      height: 138px
+      width: 309px
+      margin-top: 89px
+
+      &:nth-of-type(1)
+        margin-left: 256px
+
+        h1
+          margin-top: 32px
+
+        img
+          width: 46px
+          height: 32px
+          margin-left: 132px
+
+      &:nth-of-type(2)
+        margin-left: 81px
+
+        h1
+          margin-top: 23px
+
+        img
+          margin-left: 132px
+
+      &:nth-of-type(3)
+        margin-left: 81px
+
+        img
+          margin-left: 130px
+
+        h1
+          margin-top: 29px
+
 
 
 
