@@ -125,7 +125,7 @@ body {
         font-size: 11px;
         margin-top: 8px; }
   .content__posters {
-    height: 1753px;
+    height: 1740px;
     background-color: #f3f3f3;
     text-transform: uppercase;
     font-weight: bold;
@@ -157,8 +157,209 @@ body {
           font-weight: normal; }
       .content__posters__ex h3 {
         font-size: 12px;
-        text-align: center; }
+        text-align: center;
+        margin-top: 5px; }
     .content__posters__hot {
-      width: 280px; }
+      position: relative;
+      min-width: 280px;
+      height: 537px;
+      background-color: #ccc;
+      margin-top: 10px; }
+      .content__posters__hot a {
+        color: #2f2f2f;
+        text-decoration: none;
+        font-weight: bold;
+        text-align: center; }
+        .content__posters__hot a h4 {
+          font-size: 14px;
+          text-transform: lowercase;
+          padding-top: 29px; }
+        .content__posters__hot a h1 {
+          font-size: 21px;
+          font-weight: 800;
+          margin-top: 11px; }
+        .content__posters__hot a h3 {
+          font-size: 16px;
+          margin-top: 29px; }
+        .content__posters__hot a h2 {
+          font-size: 14.5px;
+          color: #fff;
+          margin-top: 366px; }
+      .content__posters__hot__line {
+        position: absolute;
+        top: 86px;
+        right: -4px;
+        width: 50px;
+        height: 1px;
+        background-color: #333; }
+    .content__posters__jewelry {
+      min-width: 280px;
+      height: 189px;
+      background-color: #cccccc;
+      margin-top: 10px; }
+      .content__posters__jewelry a {
+        text-decoration: none;
+        color: #fff;
+        text-align: center; }
+        .content__posters__jewelry a h1 {
+          font-size: 35px;
+          font-weight: bold;
+          padding-top: 45px; }
+        .content__posters__jewelry a h2 {
+          font-size: 20px;
+          font-weight: bold;
+          margin-top: 3px; }
+        .content__posters__jewelry a h3 {
+          font-size: 15px;
+          font-weight: bold;
+          margin-top: 38px; }
+    .content__posters__accessories {
+      background-color: #cccccc;
+      min-width: 280px;
+      height: 189px;
+      margin-top: 10px;
+      position: relative; }
+      .content__posters__accessories a {
+        text-decoration: none;
+        color: #fff;
+        text-align: center; }
+        .content__posters__accessories a h1 {
+          font-size: 25px;
+          font-weight: 800;
+          padding-top: 50px; }
+        .content__posters__accessories a h2 {
+          font-size: 21px;
+          margin-top: 8px;
+          font-weight: 500; }
+        .content__posters__accessories a h3 {
+          font-size: 15px;
+          font-weight: bold;
+          margin-top: 35px; }
+      .content__posters__accessories__line {
+        position: absolute;
+        background-color: #fff;
+        width: 42px;
+        height: 2px;
+        top: 76px; }
+    .content__posters__lookbook {
+      position: relative;
+      min-width: 280px;
+      height: 401px;
+      background-color: #cccccc;
+      margin-top: 12px; }
+      .content__posters__lookbook a {
+        text-decoration: none;
+        color: #fff;
+        text-align: center; }
+        .content__posters__lookbook a h1 {
+          font-size: 35px;
+          font-weight: bold;
+          padding-top: 122px; }
+        .content__posters__lookbook a h2 {
+          font-size: 18px;
+          font-weight: bold;
+          margin-top: 8px; }
+        .content__posters__lookbook a h3 {
+          font-size: 30px;
+          font-weight: bold;
+          margin-top: 19px; }
+        .content__posters__lookbook a h4 {
+          font-size: 15px;
+          font-weight: bold;
+          margin-top: 78px; }
+      .content__posters__lookbook__line {
+        top: 183px;
+        position: absolute;
+        width: 80px;
+        height: 1px;
+        background-color: #fff; }
+      .content__posters__lookbook__buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .content__posters__lookbook__buttons__button {
+          border: solid 2px #fff;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          margin-top: 20px;
+          margin-left: 12px; }
+          .content__posters__lookbook__buttons__button:hover {
+            background-color: #fff; }
+          .content__posters__lookbook__buttons__button:first-child {
+            margin-left: 0; }
+    .content__posters__news {
+      min-width: 280px;
+      height: 189px;
+      background-color: #cccccc;
+      margin-top: 10px; }
+      .content__posters__news a {
+        text-decoration: none;
+        color: #fff;
+        text-align: center; }
+        .content__posters__news a h1 {
+          font-size: 28px;
+          font-weight: bold;
+          padding-top: 73px; }
+
+.first {
+  left: 10px; }
+  .first__1 {
+    left: 23px; }
+
+.second {
+  right: 10px; }
+  .second__1 {
+    right: 23px; }
+
+.products {
+  background-color: #ffffff;
+  height: 151px;
+  align-items: center; }
+  .products__nav {
+    text-align: center;
+    margin-top: 30px; }
+    .products__nav div {
+      margin-top: 13px; }
+      .products__nav div a {
+        text-decoration: none;
+        color: #999;
+        text-transform: uppercase;
+        font-weight: bold; }
+        .products__nav div a:hover {
+          color: #444444; }
+    .products__nav__active {
+      color: #444444 !important;
+      border-bottom: #444444 2px solid;
+      padding-bottom: 5px; }
+      .products__nav__active__div {
+        margin-bottom: 23px; }
+  .products__product {
+    margin-top: 28px;
+    align-items: center;
+    margin-bottom: 50px; }
+    .products__product a {
+      text-decoration: none;
+      color: #222; }
+      .products__product a img {
+        width: 88px;
+        height: 15px;
+        margin-top: 5px; }
+    .products__product__img {
+      width: 280px;
+      height: 364px;
+      background-color: #cccccc; }
+    .products__product__name {
+      margin-top: 24px;
+      display: flex;
+      width: 280px;
+      justify-content: space-between; }
+      .products__product__name p {
+        font-size: 13px;
+        line-height: 1.46;
+        color: #444; }
+      .products__product__name h3 {
+        font-size: 15px;
+        font-weight: bold; }
 
 /*# sourceMappingURL=style.css.map */
