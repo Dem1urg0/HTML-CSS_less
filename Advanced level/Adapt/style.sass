@@ -532,12 +532,12 @@ body
       margin-top: 8px
 
 .clr
-  height: 4022px
+  height: 4355px
   background-color: #1f1f1f
 
 .footer
   min-width: 280px
-  margin-top: -4022px
+  margin-top: -4355px
   background-color: #1f1f1f
 
   &__about
@@ -682,6 +682,7 @@ body
   &__favorite
     border-bottom: 1px dashed #484848
     padding-bottom: 40px
+
     &__nav
       display: flex
       justify-content: space-between
@@ -703,11 +704,14 @@ body
     &__products
       display: flex
       margin-top: 16px
+
       a
         text-decoration: none
+
       &__product
         &:nth-of-type(2)
           margin-left: 20px
+
         &__img
           width: 130px
           height: 169px
@@ -717,15 +721,188 @@ body
           font-size: 12px
           color: #888
           margin-top: 19px
+
         &__price
           color: #fff
           font-size: 14px
           margin-top: 15px
+
           strike
             color: #8c8b8b
             margin-right: 8px
 
   &__twitter
+    border-bottom: 1px dashed #484848
+    padding-bottom: 40px
+
     &__nav
+      display: flex
+      justify-content: space-between
+      margin-top: 40px
+
+      a
+        text-decoration: none
+        text-transform: uppercase
+        color: #b6b6b6
+        font-size: 17px
+
+      button
+        color: #b5b5b5
+        background-color: #1f1f1f
+        box-sizing: border-box
+        border: solid 1px #b5b5b5
+        height: 23px
+        width: 70px
+        text-transform: uppercase
+        padding-bottom: 1px
+
     &__comment
+      p
+        color: #888
+        font-size: 14px
+
+        span
+          color: #fff
+
       &__person
+        display: flex
+        margin-top: 30px
+        margin-bottom: 23px
+
+        &__info
+          margin-left: 20px
+
+          &__name
+            color: #b1b1b1 !important
+            font-size: 17px !important
+            text-transform: uppercase
+            line-height: 0.97
+
+          &__teg
+            color: #777 !important
+            font-size: 13px !important
+
+      &__meta
+        display: flex
+        font-size: 13px
+        color: #666
+        margin-top: 18px
+
+        a
+          text-decoration: none
+          color: #666
+
+        &__data
+          margin-right: 34px
+
+        &__rep
+          margin-right: 20px
+
+          img
+            height: 13px
+            width: 9px
+            margin-right: 8px
+
+        &__ret
+          img
+            width: 14px
+            height: 9px
+            margin-right: 7px
+
+  &__facebook
+    border-bottom: 1px dashed #484848
+    padding-bottom: 40px
+
+    &__nav
+      margin-top: 35px
+      display: flex
+      justify-content: space-between
+
+      a
+        text-decoration: none
+        color: #b6b6b6
+        margin-top: 1px
+
+      button
+        border: solid 1px #b5b5b5
+        background-color: #1f1f1f
+        font-size: 12px
+        color: #b5b5b5
+        width: 60px
+        height: 22px
+
+    p
+      margin-top: 30px
+      color: #888
+      font-size: 14px
+      letter-spacing: -0.35px
+
+      span
+        color: #fff
+
+    &__imgs
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      margin-top: 17px
+
+      &__img
+        width: 70px
+        height: 70px
+        border: 5px solid #2f2f2f
+        box-sizing: border-box
+        background-color: #cccccc
+        margin: 10px
+
+  &__info
+    border-bottom: 1px dashed #484848
+    padding-bottom: 40px
+    margin-top: 40px
+    margin-bottom: 40px
+    a
+      color: #888
+      text-decoration: none
+      font-size: 14px
+      &:first-child
+        color: #b6b6b6
+        font-size: 17px
+        text-transform: uppercase
+        margin-top: 0
+    &__spacer
+      height: 20px
+      &:first-child
+        height: 34px
+  &__contacts
+    &__links
+      margin-top: 20px
+      display: flex
+      flex-wrap: wrap
+      &__link
+        display: flex
+        justify-content: center
+        height: 40px
+        width: 40px
+        border: 2px #999 solid
+        box-sizing: border-box
+        align-items: center
+        margin: 3px
+    p
+      color: #666
+      font-size: 12px
+      margin-top: 20px
+  &__img
+    border: solid 2px #999
+    border-radius: 50%
+    height: 45px
+    width: 45px
+    box-sizing: border-box
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 18px
+    img
+      width: 17px
+      height: 10px
+      padding-bottom: 2px
+      padding-left: 1px
+
