@@ -24,11 +24,22 @@ body
     background-color: #f6f6f6
 
     &__account
-      display: flex
-      justify-content: space-between
       margin-left: 20px
       margin-right: 20px
       padding-top: 7px
+
+      &__main
+        display: flex
+        justify-content: space-between
+
+        a:last-child
+          display: none
+
+      &__other
+        display: none
+        img
+          margin-bottom: 3px
+          margin-left: 3px
 
   &__nav2
     display: flex
@@ -41,49 +52,49 @@ body
       margin-bottom: 2px
       margin-left: 4px
 
-  &__logo
-    margin-top: 34px
+  &__face
+    &__logo
+      margin-top: 34px
 
-    a
+      a
+        display: flex
+        justify-content: center
+
+      img
+        height: 41px
+        width: 48px
+        margin-right: 11px
+
+      h1
+        font-size: 44px
+        color: #454545
+
+    &__sing
+      display: flex
+      justify-content: center
+      margin-top: 17px
+
+    &__input
+      margin-top: 22px
       display: flex
       justify-content: center
 
-    img
-      height: 41px
-      width: 48px
-      margin-right: 11px
+      input
+        height: 38px
+        width: 280px
+        border: solid 1px #e1e1e1
+        color: #888
+        padding-left: 11px
+        padding-right: 38px
+        box-sizing: border-box
+        position: relative
 
-    h1
-      font-size: 44px
-      color: #454545
-
-  &__sing
-    display: flex
-    justify-content: center
-    margin-top: 17px
-
-  &__input
-    margin-top: 22px
-    display: flex
-    justify-content: center
-
-    input
-      height: 38px
-      width: 280px
-      border: solid 1px #e1e1e1
-      color: #888
-      padding-left: 11px
-      padding-right: 38px
-      box-sizing: border-box
-      position: relative
-    //поставить по центру
-
-    img
-      width: 16px
-      height: 16px
-      position: absolute
-      margin-left: 230px
-      margin-top: 11px
+      img
+        width: 16px
+        height: 16px
+        position: absolute
+        margin-left: 230px
+        margin-top: 11px
 
   &__nav3
     display: flex
@@ -113,7 +124,12 @@ body
       p
         color: #565656
         font-size: 16px
-
+    &__full
+      display: none
+      a
+        font-size: 14px
+        font-weight: bold
+        color: #565656
 .content
   margin-top: 17px
   background-color: #ccc
@@ -156,6 +172,64 @@ body
         font-size: 11px
         margin-top: 8px
 
+  &__slider
+    height: 428px
+    position: relative
+    display: none
+    h1
+      font-size: 22px
+      font-weight: bold
+      color: #555
+      text-transform: uppercase
+      padding-top: 70px
+      line-height: 1.57
+      margin-left: 300px
+    h2
+      font-size: 74.5px
+      font-weight: 800
+      color: #fff
+      text-transform: uppercase
+      margin-top: 16px
+      line-height: 0.82
+      margin-left: 300px
+    h3
+      font-size: 26px
+      font-weight: bold
+      color: #4c4c4c
+      text-transform: uppercase
+      line-height: 0.96
+      margin-top: 14px
+      margin-bottom: 20px
+      margin-left: 300px
+    h4
+      font-size: 14.5px
+      font-weight: bold
+      text-transform: uppercase
+      line-height: 1.45
+      margin-left: 300px
+      a
+        text-decoration: none
+        color: #333
+
+    &__arrow
+      border: solid 3px #fff
+      height: 48px
+      width: 48px
+      border-radius: 50%
+      display: flex
+      justify-content: center
+      align-items: center
+      box-sizing: border-box
+      position: absolute
+      top: 180px
+      &:first-of-type
+        left: 22px
+      &:last-of-type
+        right: 22px
+      img
+        width: 12px
+        height: 18px
+        margin-top: 5px
   &__posters
     height: 1740px
     background-color: #f3f3f3
@@ -859,24 +933,30 @@ body
     padding-bottom: 40px
     margin-top: 40px
     margin-bottom: 40px
+
     a
       color: #888
       text-decoration: none
       font-size: 14px
+
       &:first-child
         color: #b6b6b6
         font-size: 17px
         text-transform: uppercase
         margin-top: 0
+
     &__spacer
       height: 20px
+
       &:first-child
         height: 34px
+
   &__contacts
     &__links
       margin-top: 20px
       display: flex
       flex-wrap: wrap
+
       &__link
         display: flex
         justify-content: center
@@ -886,10 +966,12 @@ body
         box-sizing: border-box
         align-items: center
         margin: 3px
+
     p
       color: #666
       font-size: 12px
       margin-top: 20px
+
   &__img
     border: solid 2px #999
     border-radius: 50%
@@ -900,9 +982,73 @@ body
     justify-content: center
     align-items: center
     margin-top: 18px
+
     img
       width: 17px
       height: 10px
       padding-bottom: 2px
       padding-left: 1px
 
+@media screen and (min-width: 724px)
+  .header
+    height: 160px
+    &__nav
+      &__account
+        display: flex
+        justify-content: space-between
+
+        &__main
+          justify-content: left
+
+          a
+            margin-right: 30px
+            margin-left: 0 !important
+
+            &:last-child
+              display: block
+              margin-right: 0
+
+        &__other
+          display: flex
+        a
+          margin-left: 30px
+          &:first-child
+            margin-left: 0
+
+    &__nav2
+      display: none
+    &__nav3
+      &__menu
+        display: none
+      &__cart
+        display: none
+      &__full
+        display: flex
+        justify-content: space-between
+        flex-grow: 1
+    &__face
+      display: flex
+      justify-content: space-between
+      margin-top: 34px
+
+      &__sing
+        display: none
+
+      &__input
+        margin-top: 10px
+
+        input
+          width: 260px
+          height: 32px
+
+        img
+          margin-top: 9px
+          margin-left: 220px
+
+      &__logo
+        margin-top: 0
+  .content
+    &__pay
+      display: none
+    &__slider
+      display: block

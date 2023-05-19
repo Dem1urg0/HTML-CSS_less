@@ -21,11 +21,19 @@ body {
     min-width: 320px;
     background-color: #f6f6f6; }
     .header__nav__account {
-      display: flex;
-      justify-content: space-between;
       margin-left: 20px;
       margin-right: 20px;
       padding-top: 7px; }
+      .header__nav__account__main {
+        display: flex;
+        justify-content: space-between; }
+        .header__nav__account__main a:last-child {
+          display: none; }
+      .header__nav__account__other {
+        display: none; }
+        .header__nav__account__other img {
+          margin-bottom: 3px;
+          margin-left: 3px; }
   .header__nav2 {
     display: flex;
     justify-content: space-between;
@@ -35,27 +43,27 @@ body {
     .header__nav2 img {
       margin-bottom: 2px;
       margin-left: 4px; }
-  .header__logo {
+  .header__face__logo {
     margin-top: 34px; }
-    .header__logo a {
+    .header__face__logo a {
       display: flex;
       justify-content: center; }
-    .header__logo img {
+    .header__face__logo img {
       height: 41px;
       width: 48px;
       margin-right: 11px; }
-    .header__logo h1 {
+    .header__face__logo h1 {
       font-size: 44px;
       color: #454545; }
-  .header__sing {
+  .header__face__sing {
     display: flex;
     justify-content: center;
     margin-top: 17px; }
-  .header__input {
+  .header__face__input {
     margin-top: 22px;
     display: flex;
     justify-content: center; }
-    .header__input input {
+    .header__face__input input {
       height: 38px;
       width: 280px;
       border: solid 1px #e1e1e1;
@@ -64,7 +72,7 @@ body {
       padding-right: 38px;
       box-sizing: border-box;
       position: relative; }
-    .header__input img {
+    .header__face__input img {
       width: 16px;
       height: 16px;
       position: absolute;
@@ -90,6 +98,12 @@ body {
     .header__nav3__cart p {
       color: #565656;
       font-size: 16px; }
+    .header__nav3__full {
+      display: none; }
+      .header__nav3__full a {
+        font-size: 14px;
+        font-weight: bold;
+        color: #565656; }
 
 .content {
   margin-top: 17px;
@@ -124,6 +138,63 @@ body {
       .content__pay__border h3 {
         font-size: 11px;
         margin-top: 8px; }
+  .content__slider {
+    height: 428px;
+    position: relative;
+    display: none; }
+    .content__slider h1 {
+      font-size: 22px;
+      font-weight: bold;
+      color: #555;
+      text-transform: uppercase;
+      padding-top: 70px;
+      line-height: 1.57;
+      margin-left: 300px; }
+    .content__slider h2 {
+      font-size: 74.5px;
+      font-weight: 800;
+      color: #fff;
+      text-transform: uppercase;
+      margin-top: 16px;
+      line-height: 0.82;
+      margin-left: 300px; }
+    .content__slider h3 {
+      font-size: 26px;
+      font-weight: bold;
+      color: #4c4c4c;
+      text-transform: uppercase;
+      line-height: 0.96;
+      margin-top: 14px;
+      margin-bottom: 20px;
+      margin-left: 300px; }
+    .content__slider h4 {
+      font-size: 14.5px;
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 1.45;
+      margin-left: 300px; }
+      .content__slider h4 a {
+        text-decoration: none;
+        color: #333; }
+    .content__slider__arrow {
+      border: solid 3px #fff;
+      height: 48px;
+      width: 48px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      position: absolute;
+      top: 180px; }
+      .content__slider__arrow:first-of-type {
+        left: 22px; }
+      .content__slider__arrow:last-of-type {
+        right: 22px; }
+      .content__slider__arrow img {
+        width: 12px;
+        height: 18px;
+        margin-top: 5px; }
   .content__posters {
     height: 1740px;
     background-color: #f3f3f3;
@@ -742,5 +813,57 @@ body {
       height: 10px;
       padding-bottom: 2px;
       padding-left: 1px; }
+
+@media screen and (min-width: 724px) {
+  .header {
+    height: 160px; }
+    .header__nav__account {
+      display: flex;
+      justify-content: space-between; }
+      .header__nav__account__main {
+        justify-content: left; }
+        .header__nav__account__main a {
+          margin-right: 30px;
+          margin-left: 0 !important; }
+          .header__nav__account__main a:last-child {
+            display: block;
+            margin-right: 0; }
+      .header__nav__account__other {
+        display: flex; }
+      .header__nav__account a {
+        margin-left: 30px; }
+        .header__nav__account a:first-child {
+          margin-left: 0; }
+    .header__nav2 {
+      display: none; }
+    .header__nav3__menu {
+      display: none; }
+    .header__nav3__cart {
+      display: none; }
+    .header__nav3__full {
+      display: flex;
+      justify-content: space-between;
+      flex-grow: 1; }
+    .header__face {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 34px; }
+      .header__face__sing {
+        display: none; }
+      .header__face__input {
+        margin-top: 10px; }
+        .header__face__input input {
+          width: 260px;
+          height: 32px; }
+        .header__face__input img {
+          margin-top: 9px;
+          margin-left: 220px; }
+      .header__face__logo {
+        margin-top: 0; }
+
+  .content__pay {
+    display: none; }
+  .content__slider {
+    display: block; } }
 
 /*# sourceMappingURL=style.css.map */
