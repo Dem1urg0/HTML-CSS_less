@@ -122,7 +122,6 @@ body {
       min-width: 300px;
       top: 19px;
       box-sizing: border-box;
-      margin-left: 10px;
       margin-top: 19px; }
       .content__pay__border h1, .content__pay__border h2, .content__pay__border h3 {
         color: #fff;
@@ -196,7 +195,7 @@ body {
         height: 18px;
         margin-top: 5px; }
   .content__posters {
-    height: 1740px;
+    padding-bottom: 20px;
     background-color: #f3f3f3;
     text-transform: uppercase;
     font-weight: bold;
@@ -206,7 +205,27 @@ body {
       height: 156px;
       background-color: #ccc;
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      position: relative; }
+      .content__posters__ex__arrow {
+        display: none;
+        border: solid 2px #fff;
+        width: 39px;
+        height: 38px;
+        box-sizing: border-box;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 112px; }
+        .content__posters__ex__arrow:last-of-type {
+          right: 15px; }
+        .content__posters__ex__arrow:first-of-type {
+          left: 15px; }
+        .content__posters__ex__arrow img {
+          height: 14px;
+          width: 10px;
+          margin-top: 6px; }
       .content__posters__ex a {
         text-decoration: none;
         color: #fff; }
@@ -215,9 +234,8 @@ body {
         box-sizing: border-box;
         width: 260px;
         height: 112px;
-        top: 12px;
-        left: 10px;
-        margin-top: 12px; }
+        margin-top: 12px;
+        position: relative; }
         .content__posters__ex__border h1 {
           font-size: 21px;
           margin-top: 30px;
@@ -226,10 +244,23 @@ body {
           font-size: 15px;
           text-align: center;
           font-weight: normal; }
+        .content__posters__ex__border__line {
+          width: 65px;
+          height: 2px;
+          background-color: #fff;
+          position: absolute;
+          top: 55px;
+          display: none; }
+          .content__posters__ex__border__line:first-of-type {
+            left: 16px; }
+          .content__posters__ex__border__line:last-of-type {
+            right: 16px; }
       .content__posters__ex h3 {
         font-size: 12px;
         text-align: center;
         margin-top: 5px; }
+        .content__posters__ex h3 h1 {
+          background-color: #fff; }
     .content__posters__hot {
       position: relative;
       min-width: 280px;
@@ -263,6 +294,8 @@ body {
         width: 50px;
         height: 1px;
         background-color: #333; }
+        .content__posters__hot__line:first-of-type {
+          display: none; }
     .content__posters__jewelry {
       min-width: 280px;
       height: 189px;
@@ -387,7 +420,8 @@ body {
   background-color: #ffffff;
   align-items: center;
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  padding-top: 29px; }
   .products__nav {
     text-align: center;
     margin-top: 30px; }
@@ -412,6 +446,8 @@ body {
     height: 479px;
     width: 280px;
     margin-right: 10px; }
+    .products__product:last-of-type {
+      display: none; }
     .products__product a {
       text-decoration: none;
       color: #222; }
@@ -467,9 +503,10 @@ body {
       font-size: 14px;
       font-weight: bold;
       justify-content: center;
-      margin-top: 13px; }
+      margin-top: 13px;
+      box-sizing: border-box; }
       .products__product__buttons a {
-        margin-top: 9px; }
+        margin-top: 8px; }
       .products__product__buttons__line {
         width: 2px;
         height: 16px;
@@ -814,7 +851,10 @@ body {
       padding-bottom: 2px;
       padding-left: 1px; }
 
-@media screen and (min-width: 724px) {
+.nonephone {
+  display: none; }
+
+@media screen and (min-width: 768px) {
   .header {
     height: 160px; }
     .header__nav__account {
@@ -861,9 +901,133 @@ body {
       .header__face__logo {
         margin-top: 0; }
 
+  .nonephone {
+    display: block !important; }
+
   .content__pay {
     display: none; }
   .content__slider {
-    display: block; } }
+    display: block; }
+  .content__posters {
+    display: flex; }
+    .content__posters__hot {
+      display: none;
+      margin-top: 0;
+      min-width: 228px;
+      height: 432px; }
+      .content__posters__hot a h1 {
+        font-size: 17px;
+        margin-top: 5px; }
+      .content__posters__hot a h3 {
+        font-size: 13px;
+        margin-top: 5px; }
+      .content__posters__hot a h2 {
+        margin-top: 300px; }
+      .content__posters__hot__line {
+        width: 30px;
+        top: 71px; }
+        .content__posters__hot__line:first-of-type {
+          left: 7px;
+          display: block; }
+        .content__posters__hot__line:nth-of-type(2) {
+          right: 7px; }
+    .content__posters__ex, .content__posters__lookbook, .content__posters__accessories, .content__posters__jewelry, .content__posters__news {
+      margin-right: 0; }
+    .content__posters__ex {
+      height: 266px;
+      width: 476px; }
+      .content__posters__ex__border {
+        width: 320px;
+        height: 138px;
+        margin-top: 62px; }
+        .content__posters__ex__border__line {
+          display: block; }
+      .content__posters__ex__arrow {
+        display: flex; }
+      .content__posters__ex h1 {
+        font-size: 26px;
+        font-weight: bold; }
+      .content__posters__ex h3 {
+        margin-top: 35px; }
+    .content__posters__lookbook {
+      min-width: 228px;
+      height: 328px;
+      margin-top: 20px; }
+      .content__posters__lookbook a h1 {
+        font-size: 30px;
+        padding-top: 74px; }
+      .content__posters__lookbook a h2 {
+        font-size: 12px; }
+      .content__posters__lookbook a h3 {
+        font-size: 27.5px; }
+      .content__posters__lookbook a h4 {
+        margin-top: 65px; }
+      .content__posters__lookbook__line {
+        top: 129px;
+        width: 71px; }
+        .content__posters__lookbook__line:first-of-type {
+          left: 12px; }
+        .content__posters__lookbook__line:nth-of-type(2) {
+          right: 12px; }
+    .content__posters__accessories, .content__posters__jewelry {
+      height: 154px;
+      min-width: 228px;
+      margin-top: 20px; }
+    .content__posters__jewelry a h1 {
+      font-size: 25px; }
+    .content__posters__jewelry a h2 {
+      font-size: 15.5px; }
+    .content__posters__jewelry a h3 {
+      margin-top: 24px; }
+    .content__posters__accessories__line {
+      top: 60px;
+      width: 30px; }
+    .content__posters__accessories a h1 {
+      font-size: 20px;
+      padding-top: 40px; }
+    .content__posters__accessories a h2 {
+      font-size: 15.5px; }
+    .content__posters__accessories a h3 {
+      margin-top: 25px; }
+    .content__posters__block2_1 {
+      display: flex; }
+    .content__posters__news {
+      max-width: 228px;
+      min-width: 228px;
+      height: 162px;
+      margin-top: 20px; }
+      .content__posters__news a h1 {
+        font-size: 26px;
+        padding-top: 60px; }
+
+  .products {
+    justify-content: center;
+    margin-left: 0; }
+    .products__nav {
+      display: flex;
+      justify-content: space-evenly; }
+    .products__product {
+      margin-left: 20px;
+      height: 435px;
+      width: 228px;
+      margin-bottom: 0;
+      margin-right: 0; }
+      .products__product:last-of-type {
+        display: block; }
+      .products__product__add {
+        width: 228px; }
+      .products__product__buttons {
+        width: 228px; }
+        .products__product__buttons__line {
+          margin-left: 10px;
+          margin-right: 10px; }
+      .products__product__img {
+        width: 228px;
+        height: 296px; }
+        .products__product__img__red, .products__product__img__blue, .products__product__img__black {
+          margin-top: 260px; }
+      .products__product__name {
+        width: 228px;
+        margin-top: 19px; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -37,6 +37,7 @@ body
 
       &__other
         display: none
+
         img
           margin-bottom: 3px
           margin-left: 3px
@@ -124,12 +125,15 @@ body
       p
         color: #565656
         font-size: 16px
+
     &__full
       display: none
+
       a
         font-size: 14px
         font-weight: bold
         color: #565656
+
 .content
   margin-top: 17px
   background-color: #ccc
@@ -150,7 +154,6 @@ body
       min-width: 300px
       top: 19px
       box-sizing: border-box
-      margin-left: 10px
       margin-top: 19px
 
 
@@ -176,6 +179,7 @@ body
     height: 428px
     position: relative
     display: none
+
     h1
       font-size: 22px
       font-weight: bold
@@ -184,6 +188,7 @@ body
       padding-top: 70px
       line-height: 1.57
       margin-left: 300px
+
     h2
       font-size: 74.5px
       font-weight: 800
@@ -192,6 +197,7 @@ body
       margin-top: 16px
       line-height: 0.82
       margin-left: 300px
+
     h3
       font-size: 26px
       font-weight: bold
@@ -201,12 +207,14 @@ body
       margin-top: 14px
       margin-bottom: 20px
       margin-left: 300px
+
     h4
       font-size: 14.5px
       font-weight: bold
       text-transform: uppercase
       line-height: 1.45
       margin-left: 300px
+
       a
         text-decoration: none
         color: #333
@@ -222,16 +230,20 @@ body
       box-sizing: border-box
       position: absolute
       top: 180px
+
       &:first-of-type
         left: 22px
+
       &:last-of-type
         right: 22px
+
       img
         width: 12px
         height: 18px
         margin-top: 5px
+
   &__posters
-    height: 1740px
+    padding-bottom: 20px
     background-color: #f3f3f3
     text-transform: uppercase
     font-weight: bold
@@ -243,6 +255,31 @@ body
       background-color: #ccc
       display: flex
       justify-content: center
+      position: relative
+
+      &__arrow
+        display: none
+        border: solid 2px #fff
+        width: 39px
+        height: 38px
+        box-sizing: border-box
+        border-radius: 50%
+        justify-content: center
+        align-items: center
+        position: absolute
+        top: 112px
+
+        &:last-of-type
+          right: 15px
+
+        &:first-of-type
+          left: 15px
+
+        img
+          height: 14px
+          width: 10px
+          margin-top: 6px
+
 
       a
         text-decoration: none
@@ -253,9 +290,8 @@ body
         box-sizing: border-box
         width: 260px
         height: 112px
-        top: 12px
-        left: 10px
         margin-top: 12px
+        position: relative
 
         h1
           font-size: 21px
@@ -267,10 +303,27 @@ body
           text-align: center
           font-weight: normal
 
+        &__line
+          width: 65px
+          height: 2px
+          background-color: #fff
+          position: absolute
+          top: 55px
+          display: none
+
+          &:first-of-type
+            left: 16px
+
+          &:last-of-type
+            right: 16px
+
       h3
         font-size: 12px
         text-align: center
         margin-top: 5px
+
+        h1
+          background-color: #fff
 
     &__hot
       position: relative
@@ -311,6 +364,9 @@ body
         width: 50px
         height: 1px
         background-color: #333
+
+        &:first-of-type
+          display: none
 
     &__jewelry
       min-width: 280px
@@ -463,6 +519,7 @@ body
   align-items: center
   display: flex
   flex-wrap: wrap
+  padding-top: 29px
 
   &__nav
     text-align: center
@@ -494,6 +551,8 @@ body
     height: 479px
     width: 280px
     margin-right: 10px
+    &:last-of-type
+      display: none
 
     a
       text-decoration: none
@@ -564,9 +623,10 @@ body
       font-weight: bold
       justify-content: center
       margin-top: 13px
+      box-sizing: border-box
 
       a
-        margin-top: 9px
+        margin-top: 8px
 
       &__line
         width: 2px
@@ -989,9 +1049,13 @@ body
       padding-bottom: 2px
       padding-left: 1px
 
-@media screen and (min-width: 724px)
+.nonephone
+  display: none
+
+@media screen and (min-width: 768px)
   .header
     height: 160px
+
     &__nav
       &__account
         display: flex
@@ -1010,22 +1074,28 @@ body
 
         &__other
           display: flex
+
         a
           margin-left: 30px
+
           &:first-child
             margin-left: 0
 
     &__nav2
       display: none
+
     &__nav3
       &__menu
         display: none
+
       &__cart
         display: none
+
       &__full
         display: flex
         justify-content: space-between
         flex-grow: 1
+
     &__face
       display: flex
       justify-content: space-between
@@ -1047,8 +1117,169 @@ body
 
       &__logo
         margin-top: 0
+  .nonephone
+    display: block !important
   .content
     &__pay
       display: none
+
     &__slider
       display: block
+
+    &__posters
+      display: flex
+
+
+      &__hot
+        display: none
+        margin-top: 0
+        min-width: 228px
+        height: 432px
+        a
+          h1
+            font-size: 17px
+            margin-top: 5px
+          h3
+            font-size: 13px
+            margin-top: 5px
+          h2
+            margin-top: 300px
+        &__line
+          width: 30px
+          top: 71px
+
+          &:first-of-type
+            left: 7px
+            display: block
+
+          &:nth-of-type(2)
+            right: 7px
+
+      &__ex, &__lookbook, &__accessories, &__jewelry, &__news
+        margin-right: 0
+
+      &__ex
+        height: 266px
+        width: 476px
+
+        &__border
+          width: 320px
+          height: 138px
+          margin-top: 62px
+          &__line
+            display: block
+
+        &__arrow
+          display: flex
+
+        h1
+          font-size: 26px
+          font-weight: bold
+
+        h3
+          margin-top: 35px
+
+      &__lookbook
+        min-width: 228px
+        height: 328px
+        margin-top: 20px
+
+        a
+          h1
+            font-size: 30px
+            padding-top: 74px
+
+          h2
+            font-size: 12px
+
+          h3
+            font-size: 27.5px
+
+          h4
+            margin-top: 65px
+
+        &__line
+          top: 129px
+          width: 71px
+
+          &:first-of-type
+            left: 12px
+
+          &:nth-of-type(2)
+            right: 12px
+
+      &__accessories, &__jewelry
+        height: 154px
+        min-width: 228px
+        margin-top: 20px
+
+      &__jewelry
+        a
+          h1
+            font-size: 25px
+
+          h2
+            font-size: 15.5px
+
+          h3
+            margin-top: 24px
+
+      &__accessories
+        &__line
+          top: 60px
+          width: 30px
+
+        a
+          h1
+            font-size: 20px
+            padding-top: 40px
+
+          h2
+            font-size: 15.5px
+
+          h3
+            margin-top: 25px
+
+      &__block2_1
+        display: flex
+
+      &__news
+        max-width: 228px
+        min-width: 228px
+        height: 162px
+        margin-top: 20px
+        a
+          h1
+            font-size: 26px
+            padding-top: 60px
+  .products
+    justify-content: center
+    margin-left: 0
+    &__nav
+      display: flex
+      justify-content: space-evenly
+    &__product
+      margin-left: 20px
+      height: 435px
+      width: 228px
+      margin-bottom: 0
+      margin-right: 0
+      &:last-of-type
+        display: block
+      &__add
+        width: 228px
+      &__buttons
+        width: 228px
+        &__line
+          margin-left: 10px
+          margin-right: 10px
+      &__img
+        width: 228px
+        height: 296px
+        &__red,&__blue,&__black
+          margin-top: 260px
+      &__name
+        width: 228px
+        margin-top: 19px
+
+
