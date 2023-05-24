@@ -551,6 +551,7 @@ body
     height: 479px
     width: 280px
     margin-right: 10px
+
     &:last-of-type
       display: none
 
@@ -1135,15 +1136,19 @@ body
         margin-top: 0
         min-width: 228px
         height: 432px
+
         a
           h1
             font-size: 17px
             margin-top: 5px
+
           h3
             font-size: 13px
             margin-top: 5px
+
           h2
             margin-top: 300px
+
         &__line
           width: 30px
           top: 71px
@@ -1166,6 +1171,7 @@ body
           width: 320px
           height: 138px
           margin-top: 62px
+
           &__line
             display: block
 
@@ -1248,6 +1254,7 @@ body
         min-width: 228px
         height: 162px
         margin-top: 20px
+
         a
           h1
             font-size: 26px
@@ -1255,31 +1262,136 @@ body
   .products
     justify-content: center
     margin-left: 0
+
     &__nav
       display: flex
       justify-content: space-evenly
+
     &__product
       margin-left: 20px
       height: 435px
       width: 228px
       margin-bottom: 0
       margin-right: 0
+
       &:last-of-type
         display: block
+
       &__add
         width: 228px
+
       &__buttons
         width: 228px
+
         &__line
           margin-left: 10px
           margin-right: 10px
+
       &__img
         width: 228px
         height: 296px
-        &__red,&__blue,&__black
+
+        &__red, &__blue, &__black
           margin-top: 260px
+
       &__name
         width: 228px
         margin-top: 19px
+  .clr
+    height: 1640px
+  .footer
+    margin-top: -1640px
+    &__main
+      display: flex
 
+    &__about, &__blog, &__contact, &__email
+      border-right: 1px dashed #484848
+      width: 280px
+      padding-right: 15px
+
+    &__blog
+      margin-top: 0
+      padding-top: 40px
+      margin-bottom: 0
+
+      &__nav
+        margin-top: 0
+
+    &__about
+      margin-top: 0
+      padding-top: 40px
+
+    &__contact
+      padding-top: 40px
+
+    &__favorite, &__twitter, &__facebook
+      width: 217px
+      padding-right: 15px
+      padding-left: 15px
+      border-right: 1px dashed #484848
+
+    &__favorite
+      &__products
+        &__product
+          &:nth-of-type(2)
+            display: none
+
+          &__img
+            width: 218px
+            height: 258px
+
+    &__twitter
+      padding-top: 40px
+
+      &__nav
+        margin-top: 0
+
+      &__comment
+        &__meta
+          flex-wrap: wrap
+
+          &__data
+            margin-right: 45px
+            margin-bottom: 5px
+
+    &__facebook
+      height: 354px
+
+      &__nav
+        margin-top: 0
+        padding-top: 35px
+
+      &__imgs
+        margin-top: 0
+
+        &__img
+          width: 66px
+          height: 66px
+          margin: 0
+          margin-top: 20px
+
+    &__info
+      width: 202px
+      padding-left: 13px
+
+      &:nth-of-type(3)
+        height: 270px
+
+      &:nth-of-type(4)
+        height: 314px
+
+    &__contacts
+      p
+        margin-top: 0
+
+      &__container
+        display: flex
+        justify-content: space-between
+      &__center
+        display: flex
+        justify-content: center
+
+
+      &__links
+        margin-top: 0
 

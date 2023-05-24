@@ -1028,6 +1028,77 @@ body {
           margin-top: 260px; }
       .products__product__name {
         width: 228px;
-        margin-top: 19px; } }
+        margin-top: 19px; }
+
+  .clr {
+    height: 1640px; }
+
+  .footer {
+    margin-top: -1640px; }
+    .footer__main {
+      display: flex; }
+    .footer__about, .footer__blog, .footer__contact, .footer__email {
+      border-right: 1px dashed #484848;
+      width: 280px;
+      padding-right: 15px; }
+    .footer__blog {
+      margin-top: 0;
+      padding-top: 40px;
+      margin-bottom: 0; }
+      .footer__blog__nav {
+        margin-top: 0; }
+    .footer__about {
+      margin-top: 0;
+      padding-top: 40px; }
+    .footer__contact {
+      padding-top: 40px; }
+    .footer__favorite, .footer__twitter, .footer__facebook {
+      width: 217px;
+      padding-right: 15px;
+      padding-left: 15px;
+      border-right: 1px dashed #484848; }
+    .footer__favorite__products__product:nth-of-type(2) {
+      display: none; }
+    .footer__favorite__products__product__img {
+      width: 218px;
+      height: 258px; }
+    .footer__twitter {
+      padding-top: 40px; }
+      .footer__twitter__nav {
+        margin-top: 0; }
+      .footer__twitter__comment__meta {
+        flex-wrap: wrap; }
+        .footer__twitter__comment__meta__data {
+          margin-right: 45px;
+          margin-bottom: 5px; }
+    .footer__facebook {
+      height: 354px; }
+      .footer__facebook__nav {
+        margin-top: 0;
+        padding-top: 35px; }
+      .footer__facebook__imgs {
+        margin-top: 0; }
+        .footer__facebook__imgs__img {
+          width: 66px;
+          height: 66px;
+          margin: 0;
+          margin-top: 20px; }
+    .footer__info {
+      width: 202px;
+      padding-left: 13px; }
+      .footer__info:nth-of-type(3) {
+        height: 270px; }
+      .footer__info:nth-of-type(4) {
+        height: 314px; }
+    .footer__contacts p {
+      margin-top: 0; }
+    .footer__contacts__container {
+      display: flex;
+      justify-content: space-between; }
+    .footer__contacts__center {
+      display: flex;
+      justify-content: center; }
+    .footer__contacts__links {
+      margin-top: 0; } }
 
 /*# sourceMappingURL=style.css.map */
