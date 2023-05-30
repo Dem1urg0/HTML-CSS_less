@@ -32,7 +32,9 @@ body
         display: flex
         justify-content: space-between
 
-        a:last-child
+        a:nth-of-type(5)
+          display: none
+        a:nth-of-type(4)
           display: none
 
       &__other
@@ -218,7 +220,8 @@ body
       a
         text-decoration: none
         color: #333
-
+    .content__posters__lookbook__buttons
+        display: none
     &__arrow
       border: solid 3px #fff
       height: 48px
@@ -230,12 +233,11 @@ body
       box-sizing: border-box
       position: absolute
       top: 180px
-
-      &:first-of-type
-        left: 22px
+      left: 22px
 
       &:last-of-type
-        right: 22px
+        right: 22px !important
+        left: auto
 
       img
         width: 12px
@@ -1069,7 +1071,7 @@ body
             margin-right: 30px
             margin-left: 0 !important
 
-            &:last-child
+            &:nth-of-type(4)
               display: block
               margin-right: 0
 
@@ -1129,7 +1131,7 @@ body
 
     &__posters
       display: flex
-
+      justify-content: center
 
       &__hot
         display: none
@@ -1303,6 +1305,7 @@ body
     margin-top: -1640px
     &__main
       display: flex
+      justify-content: center
 
     &__about, &__blog, &__contact, &__email
       border-right: 1px dashed #484848
@@ -1395,3 +1398,95 @@ body
       &__links
         margin-top: 0
 
+@media screen and (min-width: 980px)
+  .header
+    height: 130px
+    &__nav
+      &__account
+        &__main
+          a:nth-of-type(4)
+            display: none
+          a:nth-of-type(5)
+            display: block
+    &__nav3
+      margin-top: 30px
+      &__full
+        justify-content: flex-end
+        a
+          margin-left: 40px
+    &__face
+      margin-top: 11px
+      position: relative
+      display: flex
+      justify-content: end
+      &__logo
+        position: absolute
+        top: 39px
+        left: 0px
+  .content
+    &__slider
+      height: 546px
+      h1,h2,h3,h4
+        margin-left: 500px
+      h1
+        padding-top: 117px
+      .content__posters__lookbook__buttons
+        display: flex
+        margin-top: 95px
+      &__arrow
+        top: 249px
+    &__posters
+      &__ex
+        height: 346px
+        width: 620px
+        h3
+          margin-top: 90px
+        &__arrow
+          top: 154px
+        &__border
+          margin-top: 84px
+      &__jewelry,&__accessories, &__news
+        min-width: 300px
+        height: 203px
+      &__accessories
+        &__line
+          width: 41px
+      &__lookbook
+        width: 300px
+        height: 426px
+        a
+          h1
+            padding-top: 141px
+          h4
+            margin-top: 100px
+        &__line
+          height: 2px
+          top: 194px
+          &:nth-of-type(2)
+            right: 47px
+          &:first-of-type
+            left: 47px
+      &__hot
+        width: 300px
+        height: 569px
+        a
+          h2
+            margin-top: 400px
+          h4
+            padding-top: 65px
+        &__line
+          width: 40px
+          top: 104px
+          &:first-of-type
+            left: 30px
+          &:nth-of-type(2)
+            right: 30px
+      &__news
+        a
+          h1
+            padding-top: 80px
+  .products
+    &__nav
+      justify-content: space-between
+      margin-left: 200px
+      margin-right: 200px

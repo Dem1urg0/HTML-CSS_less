@@ -27,7 +27,9 @@ body {
       .header__nav__account__main {
         display: flex;
         justify-content: space-between; }
-        .header__nav__account__main a:last-child {
+        .header__nav__account__main a:nth-of-type(5) {
+          display: none; }
+        .header__nav__account__main a:nth-of-type(4) {
           display: none; }
       .header__nav__account__other {
         display: none; }
@@ -175,6 +177,8 @@ body {
       .content__slider h4 a {
         text-decoration: none;
         color: #333; }
+    .content__slider .content__posters__lookbook__buttons {
+      display: none; }
     .content__slider__arrow {
       border: solid 3px #fff;
       height: 48px;
@@ -185,11 +189,11 @@ body {
       align-items: center;
       box-sizing: border-box;
       position: absolute;
-      top: 180px; }
-      .content__slider__arrow:first-of-type {
-        left: 22px; }
+      top: 180px;
+      left: 22px; }
       .content__slider__arrow:last-of-type {
-        right: 22px; }
+        right: 22px !important;
+        left: auto; }
       .content__slider__arrow img {
         width: 12px;
         height: 18px;
@@ -865,7 +869,7 @@ body {
         .header__nav__account__main a {
           margin-right: 30px;
           margin-left: 0 !important; }
-          .header__nav__account__main a:last-child {
+          .header__nav__account__main a:nth-of-type(4) {
             display: block;
             margin-right: 0; }
       .header__nav__account__other {
@@ -909,7 +913,8 @@ body {
   .content__slider {
     display: block; }
   .content__posters {
-    display: flex; }
+    display: flex;
+    justify-content: center; }
     .content__posters__hot {
       display: none;
       margin-top: 0;
@@ -1036,7 +1041,8 @@ body {
   .footer {
     margin-top: -1640px; }
     .footer__main {
-      display: flex; }
+      display: flex;
+      justify-content: center; }
     .footer__about, .footer__blog, .footer__contact, .footer__email {
       border-right: 1px dashed #484848;
       width: 280px;
@@ -1100,5 +1106,88 @@ body {
       justify-content: center; }
     .footer__contacts__links {
       margin-top: 0; } }
+@media screen and (min-width: 980px) {
+  .header {
+    height: 130px; }
+    .header__nav__account__main a:nth-of-type(4) {
+      display: none; }
+    .header__nav__account__main a:nth-of-type(5) {
+      display: block; }
+    .header__nav3 {
+      margin-top: 30px; }
+      .header__nav3__full {
+        justify-content: flex-end; }
+        .header__nav3__full a {
+          margin-left: 40px; }
+    .header__face {
+      margin-top: 11px;
+      position: relative;
+      display: flex;
+      justify-content: end; }
+      .header__face__logo {
+        position: absolute;
+        top: 39px;
+        left: 0px; }
+
+  .content__slider {
+    height: 546px; }
+    .content__slider h1, .content__slider h2, .content__slider h3, .content__slider h4 {
+      margin-left: 500px; }
+    .content__slider h1 {
+      padding-top: 117px; }
+    .content__slider .content__posters__lookbook__buttons {
+      display: flex;
+      margin-top: 95px; }
+    .content__slider__arrow {
+      top: 249px; }
+  .content__posters__ex {
+    height: 346px;
+    width: 620px; }
+    .content__posters__ex h3 {
+      margin-top: 90px; }
+    .content__posters__ex__arrow {
+      top: 154px; }
+    .content__posters__ex__border {
+      margin-top: 84px; }
+  .content__posters__jewelry, .content__posters__accessories, .content__posters__news {
+    min-width: 300px;
+    height: 203px; }
+  .content__posters__accessories__line {
+    width: 41px; }
+  .content__posters__lookbook {
+    width: 300px;
+    height: 426px; }
+    .content__posters__lookbook a h1 {
+      padding-top: 141px; }
+    .content__posters__lookbook a h4 {
+      margin-top: 100px; }
+    .content__posters__lookbook__line {
+      height: 2px;
+      top: 194px; }
+      .content__posters__lookbook__line:nth-of-type(2) {
+        right: 47px; }
+      .content__posters__lookbook__line:first-of-type {
+        left: 47px; }
+  .content__posters__hot {
+    width: 300px;
+    height: 569px; }
+    .content__posters__hot a h2 {
+      margin-top: 400px; }
+    .content__posters__hot a h4 {
+      padding-top: 65px; }
+    .content__posters__hot__line {
+      width: 40px;
+      top: 104px; }
+      .content__posters__hot__line:first-of-type {
+        left: 30px; }
+      .content__posters__hot__line:nth-of-type(2) {
+        right: 30px; }
+  .content__posters__news a h1 {
+    padding-top: 80px; }
+
+  .products__nav {
+    justify-content: space-between;
+    margin-left: 200px;
+    margin-right: 200px; } }
 
 /*# sourceMappingURL=style.css.map */
