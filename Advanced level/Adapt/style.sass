@@ -742,6 +742,10 @@ body
 
         &:first-child
           margin-right: 2px
+    &__posters
+      display: flex
+      &__post2
+        display: none
 
     &__img
       min-width: 280px
@@ -1299,6 +1303,9 @@ body
       &__name
         width: 228px
         margin-top: 19px
+    &__more
+      &__line
+        min-width: 250px
   .clr
     height: 1640px
   .footer
@@ -1490,3 +1497,112 @@ body
       justify-content: space-between
       margin-left: 200px
       margin-right: 200px
+    &__product
+      width: 300px
+      height: 500px
+      &__img
+        width: 300px
+        height: 390px
+      &__name
+        width: 300px
+      &__buttons
+        width: 300px
+    &__more
+      &__line
+        min-width: 405px
+  .footer
+    &__about
+      width: 390px
+      &__content
+        &__img
+          height: 170px
+          width: 170px
+        a
+          margin-left: 190px
+    &__blog
+      width: 390px
+      &__img
+        height: 128px
+        max-width: 175px
+        min-width: 150px
+      a:last-child
+        font-size: 10.5px
+      &__posters
+        justify-content: space-around
+        &__post2
+          display: block
+          margin-left: 20px
+    &__contact
+      width: 390px
+      display: flex
+      justify-content: center
+      flex-wrap: wrap
+      &__map
+        width: 370px
+      &__name
+        width: 370px
+      &__email
+        width: 370px
+      &__message
+        width: 370px
+      a:nth-of-type(2)
+        margin-right: 266px
+    &__email
+      width: 390px
+      display: flex
+      justify-content: center
+      input
+        width: 370px
+    &__favorite
+      width: 319px
+      &__products
+        display: flex
+        justify-content: center
+        &__product
+          &__img
+            width: 135px
+            height: 177px
+          &:last-of-type
+            display: block
+    &__twitter
+      width: 319px
+
+    &__facebook
+      width: 319px
+      padding-bottom: 79px
+      &__imgs
+        width: 263px
+      &__center
+        display: flex
+        justify-content: center
+    &__info
+      padding-bottom: 37.5px
+      &__spacer
+        height: 10px
+
+@media screen and (min-width: 1920px)
+  .header
+    &__nav
+      &__account
+        margin-left: 374px
+        margin-right: 374px
+    &__face
+      margin-right: 374px
+      &__logo
+        left: 354px
+    &__nav3
+      margin-right: 374px
+  .content
+    &__slider
+      width: 1920px
+      height: 1070px
+      &__arrow
+        top: 504px
+      h1
+        padding-top: 378px
+      h1,h2,h3,h4
+        margin-left: 1041px
+    &__posters
+      &__lookbook
+        &__buttons
+          margin-top: 360px !important
