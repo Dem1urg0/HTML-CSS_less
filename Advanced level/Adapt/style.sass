@@ -34,6 +34,7 @@ body
 
         a:nth-of-type(5)
           display: none
+
         a:nth-of-type(4)
           display: none
 
@@ -220,8 +221,10 @@ body
       a
         text-decoration: none
         color: #333
+
     .content__posters__lookbook__buttons
-        display: none
+      display: none
+
     &__arrow
       border: solid 3px #fff
       height: 48px
@@ -526,7 +529,9 @@ body
   &__nav
     text-align: center
     margin-top: 30px
-
+    &__container
+      display: flex
+      justify-content: center
     div
       margin-top: 13px
 
@@ -553,6 +558,8 @@ body
     height: 479px
     width: 280px
     margin-right: 10px
+    &:nth-of-type(7),&:nth-of-type(8)
+      display: block
 
     &:last-of-type
       display: none
@@ -693,6 +700,7 @@ body
     &__content
       margin-top: 30px
 
+
       &__img
         height: 120px
         width: 120px
@@ -742,8 +750,10 @@ body
 
         &:first-child
           margin-right: 2px
+
     &__posters
       display: flex
+
       &__post2
         display: none
 
@@ -765,6 +775,10 @@ body
   &__contact
     border-bottom: 1px dashed #484848
     padding-bottom: 40px
+    &__messages
+      display: flex
+      justify-content: center
+      flex-wrap: wrap
 
     &__map
       width: 280px
@@ -1272,6 +1286,9 @@ body
     &__nav
       display: flex
       justify-content: space-evenly
+      &__container
+        &__weight
+          width: 584px
 
     &__product
       margin-left: 20px
@@ -1303,6 +1320,7 @@ body
       &__name
         width: 228px
         margin-top: 19px
+
     &__more
       &__line
         min-width: 250px
@@ -1310,6 +1328,7 @@ body
     height: 1640px
   .footer
     margin-top: -1640px
+
     &__main
       display: flex
       justify-content: center
@@ -1397,6 +1416,7 @@ body
       &__container
         display: flex
         justify-content: space-between
+
       &__center
         display: flex
         justify-content: center
@@ -1408,24 +1428,31 @@ body
 @media screen and (min-width: 980px)
   .header
     height: 130px
+
     &__nav
       &__account
         &__main
           a:nth-of-type(4)
             display: none
+
           a:nth-of-type(5)
             display: block
+
     &__nav3
       margin-top: 30px
+
       &__full
         justify-content: flex-end
+
         a
           margin-left: 40px
+
     &__face
       margin-top: 11px
       position: relative
       display: flex
       justify-content: end
+
       &__logo
         position: absolute
         top: 39px
@@ -1433,150 +1460,251 @@ body
   .content
     &__slider
       height: 546px
-      h1,h2,h3,h4
+
+      h1, h2, h3, h4
         margin-left: 500px
+
       h1
         padding-top: 117px
+        font-size: 25px
+
+      h2
+        font-size: 85px
+        margin-top: 5px
+
+      h3
+        font-size: 30px
+
       .content__posters__lookbook__buttons
         display: flex
-        margin-top: 95px
+        margin-top: 80px
+
       &__arrow
         top: 249px
+
     &__posters
+      padding-top: 30px
+      padding-bottom: 30px
+
       &__ex
         height: 346px
         width: 620px
+
+        h1
+          font-size: 34px
+          margin-top: 55px
+
+        h2
+          font-size: 22px
+
         h3
-          margin-top: 90px
+          margin-top: 50px
+          font-size: 14.5px
+
         &__arrow
           top: 154px
+
         &__border
           margin-top: 84px
-      &__jewelry,&__accessories, &__news
+          width: 422px
+          height: 177px
+
+          &__line
+            width: 85px
+            top: 85px
+
+      &__jewelry, &__accessories, &__news
         min-width: 300px
         height: 203px
+
+      &__jewelry
+        a
+          h1
+            font-size: 32px
+
+          h2
+            font-size: 18px
+
       &__accessories
+        a
+          h1
+            font-size: 25px
+
+          h2
+            font-size: 19px
+
         &__line
           width: 41px
+
       &__lookbook
         width: 300px
         height: 426px
+
         a
           h1
             padding-top: 141px
+
           h4
             margin-top: 100px
+
         &__line
           height: 2px
           top: 194px
+
           &:nth-of-type(2)
             right: 47px
+
           &:first-of-type
             left: 47px
+
       &__hot
         width: 300px
         height: 569px
+
         a
+          h1
+            font-size: 19px
+            margin-top: 1px
+
           h2
             margin-top: 400px
+
+          h3
+            font-size: 15px
+
           h4
             padding-top: 65px
+            font-size: 15px
+
         &__line
           width: 40px
-          top: 104px
+          top: 102px
+
           &:first-of-type
-            left: 30px
+            left: 20px
+
           &:nth-of-type(2)
-            right: 30px
+            right: 20px
+
       &__news
         a
           h1
             padding-top: 80px
+            font-size: 28px
   .products
     &__nav
       justify-content: space-between
-      margin-left: 200px
-      margin-right: 200px
+
     &__product
       width: 300px
       height: 500px
+
       &__img
         width: 300px
         height: 390px
+        &__red, &__blue, &__black
+          margin-top: 355px
+
       &__name
         width: 300px
+
       &__buttons
         width: 300px
+
     &__more
       &__line
         min-width: 405px
   .footer
     &__about
       width: 390px
+
       &__content
         &__img
           height: 170px
           width: 170px
+
         a
           margin-left: 190px
+
     &__blog
       width: 390px
+
       &__img
         height: 128px
         max-width: 175px
         min-width: 150px
+
       a:last-child
         font-size: 10.5px
+
       &__posters
         justify-content: space-around
+
         &__post2
           display: block
           margin-left: 20px
+
     &__contact
       width: 390px
       display: flex
-      justify-content: center
       flex-wrap: wrap
+
       &__map
         width: 370px
+        margin-left: 10px
+
       &__name
         width: 370px
+
       &__email
         width: 370px
+
       &__message
         width: 370px
+
       a:nth-of-type(2)
         margin-right: 266px
+
     &__email
       width: 390px
       display: flex
       justify-content: center
+
       input
         width: 370px
+
     &__favorite
       width: 319px
+
       &__products
         display: flex
         justify-content: center
+
         &__product
           &__img
             width: 135px
             height: 177px
+
           &:last-of-type
             display: block
+
     &__twitter
       width: 319px
 
     &__facebook
       width: 319px
       padding-bottom: 79px
+
       &__imgs
         width: 263px
+
       &__center
         display: flex
         justify-content: center
+
     &__info
       padding-bottom: 37.5px
+
       &__spacer
         height: 10px
 
@@ -1586,23 +1714,229 @@ body
       &__account
         margin-left: 374px
         margin-right: 374px
+
     &__face
       margin-right: 374px
+
       &__logo
         left: 354px
+
     &__nav3
       margin-right: 374px
+  .second
+    right: 23px
+  .first
+    left: 23px
   .content
     &__slider
       width: 1920px
       height: 1070px
+
+      .content__posters__lookbook__buttons
+        margin-top: 290px
+
       &__arrow
         top: 504px
+
       h1
         padding-top: 378px
-      h1,h2,h3,h4
+        font-size: 30px
+
+      h2
+        font-size: 100px
+
+      h3
+        font-size: 34px
+
+      h1, h2, h3, h4
         margin-left: 1041px
+
     &__posters
+      padding-top: 60px
+      padding-bottom: 60px
+
+      &__ex
+        width: 770px
+        height: 430px
+
+        a
+          h1
+            font-size: 40px
+
+          h2
+            font-size: 25px
+
+          h3
+            margin-top: 65px
+
+        &__arrow
+          top: 196px
+
+        &__border
+          width: 501px
+          height: 210px
+          margin-top: 120px
+
+          &__line
+            width: 101px
+            top: 91px
+
+            &:last-of-type
+              right: 30px
+
+            &:first-of-type
+              left: 30px
+
+      &__jewelry
+        margin-top: 30px
+        width: 370px
+        height: 250px
+
+        a
+          h1
+            font-size: 40px
+            padding-top: 85px
+
+          h2
+            font-size: 23px
+
+          h3
+            margin-top: 48px
+
       &__lookbook
-        &__buttons
-          margin-top: 360px !important
+        margin-top: 30px
+        margin-left: 30px
+        width: 370px
+        height: 530px
+
+        a
+          h1
+            font-size: 35px
+            padding-top: 210px
+
+          h2
+            font-size: 18px
+
+          h3
+            font-size: 30px
+
+          h4
+            margin-top: 116px
+
+        &__line
+          top: 273px
+
+          &:first-of-type
+            left: 65px
+
+          &:nth-of-type(2)
+            right: 65px
+
+      &__accessories
+        margin-top: 30px
+        width: 370px
+        height: 250px
+
+        a
+          h1
+            font-size: 30px
+            padding-top: 81px
+
+          h2
+            font-size: 25px
+
+          h3
+            margin-top: 57px
+
+        &__line
+          width: 50px
+          top: 108px
+
+      &__hot
+        margin-left: 30px
+        width: 370px
+        height: 710px
+
+        a
+          h4
+            font-size: 18px
+
+          h1
+            font-size: 25px
+
+          h3
+            font-size: 20px
+          h2
+            margin-top: 500px
+
+        &__line
+          width: 50px
+          top: 110px
+
+      &__news
+        margin-left: 30px
+        margin-top: 30px
+        min-width: 370px
+        height: 250px
+        font-size: 30px
+        a
+          h1
+            padding-top: 110px
+  .prod-container
+    display: flex
+    justify-content: center
+  .products
+    width: 1170px
+
+    &__product
+      width: 270px
+      &:nth-of-type(7),&:nth-of-type(8)
+        display: block
+      &__img
+        width: 270px
+        height: 351px
+        &__black,&__blue,&__red
+          margin-top: 315px
+      &__name
+        width: 270px
+      &__buttons
+        width: 270px
+      &__add
+        width: 270px
+  .footer
+    &__about,&__blog,&__contact,&__email
+      width: 475px
+      padding-right: 25px
+    &__favorite,&__twitter,&__facebook
+      width: 400px
+    &__about,&__favorite,&__info
+      padding-top: 89px
+    &__favorite
+      &__nav
+        a
+          margin-top: 0
+    &__info
+      margin-top: 0
+    &__about
+      &__content
+        &__img
+          height: 180px
+          width: 180px
+        a
+          margin-left: 0
+        p
+          margin-bottom: 3px
+        &__messages
+          justify-content: center
+    &__blog
+      &__img
+        max-width: 205px
+        min-width: 205px
+        height: 150px
+      &__posters
+        justify-content: space-between
+    &__contact
+      &__map
+        margin-left: 0px
+        width: 215px
+        height: 215px

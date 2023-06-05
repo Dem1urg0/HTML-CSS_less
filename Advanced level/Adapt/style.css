@@ -429,6 +429,9 @@ body {
   .products__nav {
     text-align: center;
     margin-top: 30px; }
+    .products__nav__container {
+      display: flex;
+      justify-content: center; }
     .products__nav div {
       margin-top: 13px; }
       .products__nav div a {
@@ -450,6 +453,8 @@ body {
     height: 479px;
     width: 280px;
     margin-right: 10px; }
+    .products__product:nth-of-type(7), .products__product:nth-of-type(8) {
+      display: block; }
     .products__product:last-of-type {
       display: none; }
     .products__product a {
@@ -625,6 +630,10 @@ body {
   .footer__contact {
     border-bottom: 1px dashed #484848;
     padding-bottom: 40px; }
+    .footer__contact__messages {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap; }
     .footer__contact__map {
       width: 280px;
       height: 130px;
@@ -1015,6 +1024,8 @@ body {
     .products__nav {
       display: flex;
       justify-content: space-evenly; }
+      .products__nav__container__weight {
+        width: 584px; }
     .products__product {
       margin-left: 20px;
       height: 435px;
@@ -1140,67 +1151,102 @@ body {
     .content__slider h1, .content__slider h2, .content__slider h3, .content__slider h4 {
       margin-left: 500px; }
     .content__slider h1 {
-      padding-top: 117px; }
+      padding-top: 117px;
+      font-size: 25px; }
+    .content__slider h2 {
+      font-size: 85px;
+      margin-top: 5px; }
+    .content__slider h3 {
+      font-size: 30px; }
     .content__slider .content__posters__lookbook__buttons {
       display: flex;
-      margin-top: 95px; }
+      margin-top: 80px; }
     .content__slider__arrow {
       top: 249px; }
-  .content__posters__ex {
-    height: 346px;
-    width: 620px; }
-    .content__posters__ex h3 {
-      margin-top: 90px; }
-    .content__posters__ex__arrow {
-      top: 154px; }
-    .content__posters__ex__border {
-      margin-top: 84px; }
-  .content__posters__jewelry, .content__posters__accessories, .content__posters__news {
-    min-width: 300px;
-    height: 203px; }
-  .content__posters__accessories__line {
-    width: 41px; }
-  .content__posters__lookbook {
-    width: 300px;
-    height: 426px; }
-    .content__posters__lookbook a h1 {
-      padding-top: 141px; }
-    .content__posters__lookbook a h4 {
-      margin-top: 100px; }
-    .content__posters__lookbook__line {
-      height: 2px;
-      top: 194px; }
-      .content__posters__lookbook__line:nth-of-type(2) {
-        right: 47px; }
-      .content__posters__lookbook__line:first-of-type {
-        left: 47px; }
-  .content__posters__hot {
-    width: 300px;
-    height: 569px; }
-    .content__posters__hot a h2 {
-      margin-top: 400px; }
-    .content__posters__hot a h4 {
-      padding-top: 65px; }
-    .content__posters__hot__line {
-      width: 40px;
-      top: 104px; }
-      .content__posters__hot__line:first-of-type {
-        left: 30px; }
-      .content__posters__hot__line:nth-of-type(2) {
-        right: 30px; }
-  .content__posters__news a h1 {
-    padding-top: 80px; }
+  .content__posters {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+    .content__posters__ex {
+      height: 346px;
+      width: 620px; }
+      .content__posters__ex h1 {
+        font-size: 34px;
+        margin-top: 55px; }
+      .content__posters__ex h2 {
+        font-size: 22px; }
+      .content__posters__ex h3 {
+        margin-top: 50px;
+        font-size: 14.5px; }
+      .content__posters__ex__arrow {
+        top: 154px; }
+      .content__posters__ex__border {
+        margin-top: 84px;
+        width: 422px;
+        height: 177px; }
+        .content__posters__ex__border__line {
+          width: 85px;
+          top: 85px; }
+    .content__posters__jewelry, .content__posters__accessories, .content__posters__news {
+      min-width: 300px;
+      height: 203px; }
+    .content__posters__jewelry a h1 {
+      font-size: 32px; }
+    .content__posters__jewelry a h2 {
+      font-size: 18px; }
+    .content__posters__accessories a h1 {
+      font-size: 25px; }
+    .content__posters__accessories a h2 {
+      font-size: 19px; }
+    .content__posters__accessories__line {
+      width: 41px; }
+    .content__posters__lookbook {
+      width: 300px;
+      height: 426px; }
+      .content__posters__lookbook a h1 {
+        padding-top: 141px; }
+      .content__posters__lookbook a h4 {
+        margin-top: 100px; }
+      .content__posters__lookbook__line {
+        height: 2px;
+        top: 194px; }
+        .content__posters__lookbook__line:nth-of-type(2) {
+          right: 47px; }
+        .content__posters__lookbook__line:first-of-type {
+          left: 47px; }
+    .content__posters__hot {
+      width: 300px;
+      height: 569px; }
+      .content__posters__hot a h1 {
+        font-size: 19px;
+        margin-top: 1px; }
+      .content__posters__hot a h2 {
+        margin-top: 400px; }
+      .content__posters__hot a h3 {
+        font-size: 15px; }
+      .content__posters__hot a h4 {
+        padding-top: 65px;
+        font-size: 15px; }
+      .content__posters__hot__line {
+        width: 40px;
+        top: 102px; }
+        .content__posters__hot__line:first-of-type {
+          left: 20px; }
+        .content__posters__hot__line:nth-of-type(2) {
+          right: 20px; }
+    .content__posters__news a h1 {
+      padding-top: 80px;
+      font-size: 28px; }
 
   .products__nav {
-    justify-content: space-between;
-    margin-left: 200px;
-    margin-right: 200px; }
+    justify-content: space-between; }
   .products__product {
     width: 300px;
     height: 500px; }
     .products__product__img {
       width: 300px;
       height: 390px; }
+      .products__product__img__red, .products__product__img__blue, .products__product__img__black {
+        margin-top: 355px; }
     .products__product__name {
       width: 300px; }
     .products__product__buttons {
@@ -1231,10 +1277,10 @@ body {
   .footer__contact {
     width: 390px;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap; }
     .footer__contact__map {
-      width: 370px; }
+      width: 370px;
+      margin-left: 10px; }
     .footer__contact__name {
       width: 370px; }
     .footer__contact__email {
@@ -1284,16 +1330,173 @@ body {
   .header__nav3 {
     margin-right: 374px; }
 
+  .second {
+    right: 23px; }
+
+  .first {
+    left: 23px; }
+
   .content__slider {
     width: 1920px;
     height: 1070px; }
+    .content__slider .content__posters__lookbook__buttons {
+      margin-top: 290px; }
     .content__slider__arrow {
       top: 504px; }
     .content__slider h1 {
-      padding-top: 378px; }
+      padding-top: 378px;
+      font-size: 30px; }
+    .content__slider h2 {
+      font-size: 100px; }
+    .content__slider h3 {
+      font-size: 34px; }
     .content__slider h1, .content__slider h2, .content__slider h3, .content__slider h4 {
       margin-left: 1041px; }
-  .content__posters__lookbook__buttons {
-    margin-top: 360px !important; } }
+  .content__posters {
+    padding-top: 60px;
+    padding-bottom: 60px; }
+    .content__posters__ex {
+      width: 770px;
+      height: 430px; }
+      .content__posters__ex a h1 {
+        font-size: 40px; }
+      .content__posters__ex a h2 {
+        font-size: 25px; }
+      .content__posters__ex a h3 {
+        margin-top: 65px; }
+      .content__posters__ex__arrow {
+        top: 196px; }
+      .content__posters__ex__border {
+        width: 501px;
+        height: 210px;
+        margin-top: 120px; }
+        .content__posters__ex__border__line {
+          width: 101px;
+          top: 91px; }
+          .content__posters__ex__border__line:last-of-type {
+            right: 30px; }
+          .content__posters__ex__border__line:first-of-type {
+            left: 30px; }
+    .content__posters__jewelry {
+      margin-top: 30px;
+      width: 370px;
+      height: 250px; }
+      .content__posters__jewelry a h1 {
+        font-size: 40px;
+        padding-top: 85px; }
+      .content__posters__jewelry a h2 {
+        font-size: 23px; }
+      .content__posters__jewelry a h3 {
+        margin-top: 48px; }
+    .content__posters__lookbook {
+      margin-top: 30px;
+      margin-left: 30px;
+      width: 370px;
+      height: 530px; }
+      .content__posters__lookbook a h1 {
+        font-size: 35px;
+        padding-top: 210px; }
+      .content__posters__lookbook a h2 {
+        font-size: 18px; }
+      .content__posters__lookbook a h3 {
+        font-size: 30px; }
+      .content__posters__lookbook a h4 {
+        margin-top: 116px; }
+      .content__posters__lookbook__line {
+        top: 273px; }
+        .content__posters__lookbook__line:first-of-type {
+          left: 65px; }
+        .content__posters__lookbook__line:nth-of-type(2) {
+          right: 65px; }
+    .content__posters__accessories {
+      margin-top: 30px;
+      width: 370px;
+      height: 250px; }
+      .content__posters__accessories a h1 {
+        font-size: 30px;
+        padding-top: 81px; }
+      .content__posters__accessories a h2 {
+        font-size: 25px; }
+      .content__posters__accessories a h3 {
+        margin-top: 57px; }
+      .content__posters__accessories__line {
+        width: 50px;
+        top: 108px; }
+    .content__posters__hot {
+      margin-left: 30px;
+      width: 370px;
+      height: 710px; }
+      .content__posters__hot a h4 {
+        font-size: 18px; }
+      .content__posters__hot a h1 {
+        font-size: 25px; }
+      .content__posters__hot a h3 {
+        font-size: 20px; }
+      .content__posters__hot a h2 {
+        margin-top: 500px; }
+      .content__posters__hot__line {
+        width: 50px;
+        top: 110px; }
+    .content__posters__news {
+      margin-left: 30px;
+      margin-top: 30px;
+      min-width: 370px;
+      height: 250px;
+      font-size: 30px; }
+      .content__posters__news a h1 {
+        padding-top: 110px; }
+
+  .prod-container {
+    display: flex;
+    justify-content: center; }
+
+  .products {
+    width: 1170px; }
+    .products__product {
+      width: 270px; }
+      .products__product:nth-of-type(7), .products__product:nth-of-type(8) {
+        display: block; }
+      .products__product__img {
+        width: 270px;
+        height: 351px; }
+        .products__product__img__black, .products__product__img__blue, .products__product__img__red {
+          margin-top: 315px; }
+      .products__product__name {
+        width: 270px; }
+      .products__product__buttons {
+        width: 270px; }
+      .products__product__add {
+        width: 270px; }
+
+  .footer__about, .footer__blog, .footer__contact, .footer__email {
+    width: 475px;
+    padding-right: 25px; }
+  .footer__favorite, .footer__twitter, .footer__facebook {
+    width: 400px; }
+  .footer__about, .footer__favorite, .footer__info {
+    padding-top: 89px; }
+  .footer__favorite__nav a {
+    margin-top: 0; }
+  .footer__info {
+    margin-top: 0; }
+  .footer__about__content__img {
+    height: 180px;
+    width: 180px; }
+  .footer__about__content a {
+    margin-left: 0; }
+  .footer__about__content p {
+    margin-bottom: 3px; }
+  .footer__about__content__messages {
+    justify-content: center; }
+  .footer__blog__img {
+    max-width: 205px;
+    min-width: 205px;
+    height: 150px; }
+  .footer__blog__posters {
+    justify-content: space-between; }
+  .footer__contact__map {
+    margin-left: 0px;
+    width: 215px;
+    height: 215px; } }
 
 /*# sourceMappingURL=style.css.map */
