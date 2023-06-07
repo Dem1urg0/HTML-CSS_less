@@ -558,11 +558,9 @@ body
     height: 479px
     width: 280px
     margin-right: 10px
-    &:nth-of-type(7),&:nth-of-type(8)
-      display: block
-
-    &:last-of-type
+    &:nth-of-type(7),&:nth-of-type(8),&:nth-of-type(6)
       display: none
+
 
     a
       text-decoration: none
@@ -1008,6 +1006,8 @@ body
         box-sizing: border-box
         background-color: #cccccc
         margin: 10px
+        &:nth-of-type(7),&:nth-of-type(8)
+          display: none
 
   &__info
     border-bottom: 1px dashed #484848
@@ -1297,7 +1297,7 @@ body
       margin-bottom: 0
       margin-right: 0
 
-      &:last-of-type
+      &:nth-of-type(6)
         display: block
 
       &__add
@@ -1669,6 +1669,7 @@ body
       width: 390px
       display: flex
       justify-content: center
+      padding-bottom: 31px
 
       input
         width: 370px
@@ -1904,9 +1905,13 @@ body
       &__add
         width: 270px
   .footer
+    margin-top: -1670px
     &__about,&__blog,&__contact,&__email
       width: 475px
       padding-right: 25px
+      box-sizing: border-box
+    &__blog,&__contact,&__email
+      padding-top: 60px
     &__favorite,&__twitter,&__facebook
       width: 400px
     &__about,&__favorite,&__info
@@ -1940,3 +1945,60 @@ body
         margin-left: 0px
         width: 215px
         height: 215px
+        margin-top: 0
+      &__container
+        display: flex
+        margin-top: 30px
+      &__name
+        width: 215px
+      &__email
+        width: 215px
+      &__message
+        width: 215px
+        height: 135px
+      &__messages
+        justify-content: flex-start
+        margin-left: 20px
+        width: 215px
+    &__email
+      padding-bottom: 97px
+      height: 361px
+      input
+        width: 450px
+        margin-top: 0
+    &__favorite
+      padding-top: 89px !important
+      &__products
+        justify-content: space-between
+        &__product
+          &__img
+            width: 150px
+            height: 195px
+    &__favorite,&__twitter,&__facebook
+      padding-right: 25px
+      padding-left: 25px
+      box-sizing: border-box
+      padding-top: 60px
+    &__facebook
+      height: 527px
+      &__nav
+        padding-top: 0
+      &__imgs
+        width: 329px
+        justify-content: space-between
+        &__img
+          &:nth-of-type(7),&:nth-of-type(8)
+            display: block
+    &__info
+      padding-top: 60px
+      margin-bottom: 0
+      &:first-of-type
+        padding-top: 89px
+      &:nth-of-type(4)
+        height: 264px
+      &__spacer
+        height: 20px
+    &__contacts
+      &__container
+        margin-top: 40px
+        justify-content: space-around
