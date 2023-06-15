@@ -3,7 +3,8 @@
   padding: 0; }
 
 body {
-  font-family: "Merriweather Sans", sans-serif; }
+  font-family: "Merriweather Sans", sans-serif;
+  height: 100%; }
 
 .container {
   margin-left: 20px;
@@ -1468,6 +1469,9 @@ body {
         width: 270px; }
       .products__product__add {
         width: 270px; }
+
+  .clr {
+    height: 1670px; }
 
   .footer {
     margin-top: -1670px; }
